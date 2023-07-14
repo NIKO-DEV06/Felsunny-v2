@@ -1,27 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Integral CF";
+  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-regular.otf")
+    format("opentype");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Integral CF Bold";
+  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-bold.otf")
+    format("opentype");
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "Integral CF Demibold";
+  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-demibold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Integral CF Extrabold";
+  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-extrabold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Integral CF Heavy";
+  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-heavy.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Integral CF Medium";
+  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-medium.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("/fonts/sofiapro/sofiapro-light.otf") format("opentype");
 }
