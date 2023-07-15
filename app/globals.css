@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "hamburgers/dist/hamburgers.min.css";
 
 @font-face {
   font-family: "Integral CF";
@@ -41,4 +42,47 @@
 @font-face {
   font-family: "Sofia";
   src: url("/fonts/sofiapro/sofiapro-light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Sofia-Regular";
+  src: url("/fonts/sofiapro/SofiaProRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia-Medium";
+  src: url("/fonts/sofiapro/SofiaProMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia-Bold";
+  src: url("/fonts/sofiapro/SofiaProBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia-Semibold";
+  src: url("/fonts/sofiapro/SofiaProSemiBold.ttf") format("truetype");
+}
+
+.stroke {
+  -webkit-text-stroke: 1px white;
+}
+
+.stroke-neon {
+  -webkit-text-stroke: 1px #e0fd60;
+}
+
+.felsunny::before {
+  color: #723d46;
+  content: attr(data-fill-text);
+  position: absolute;
+  width: 0%;
+  color: #e0fd60;
+  -webkit-text-stroke: Opx transparent;
+  overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.felsunny:hover::before {
+  width: 100%;
 }
