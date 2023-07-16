@@ -1,9 +1,14 @@
 "use client";
 
+import { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const Nav = () => {
+const Nav = ({
+  setIsOpen,
+}: {
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
+}) => {
   const pathname = usePathname();
 
   const links = [
@@ -32,11 +37,11 @@ const Nav = () => {
     <div className="flex flex-col font-sofia text-[3.2rem] md:text-[3.5rem]">
       {links.map((link, index) => (
         <div className="relative w-fit group h-[4rem] md:h-[5rem] overflow-hidden">
-          <Link href={link.url} className="">
-            <p className="translate-y-[.2rem] md:translate-y-[.8rem] md:group-hover:translate-y-[-5rem] duration-[450ms] transform ease-in-out">
+          <Link onClick={() => setIsOpen(false)} href={link.url} className="">
+            <p className="translate-y-[.2rem] md:translate-y-[.8rem] md:group-hover:translate-y-[-5rem] duration-[450ms] cubic">
               {link.name}
             </p>
-            <p className="md:group-hover:translate-y-[-4.7rem] duration-[450ms] transform ease-in-out">
+            <p className="md:group-hover:translate-y-[-4.7rem] duration-[450ms] cubic">
               {link.name}
             </p>
           </Link>

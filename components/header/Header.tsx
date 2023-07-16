@@ -4,7 +4,7 @@ import { useState } from "react";
 import Menu from "./Menu";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -28,7 +28,7 @@ const Header = () => {
         </button>
       </div>
 
-      <Menu />
+      <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 };
