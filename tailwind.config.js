@@ -20,6 +20,7 @@ module.exports = {
         "integral-heavy": ["Integral CF Heavy", "sans-serif"],
         "integral-medium": ["Integral CF Medium", "sans-serif"],
         sofia: ["Sofia", "sans-serif"],
+        "sofia-extralight": ["Sofia-Extralight", "sans-serif"],
         "sofia-regular": ["Sofia-Regular", "sans-serif"],
         "sofia-medium": ["Sofia-Medium", "sans-serif"],
         "sofia-semibold": ["Sofia-Semibold", "sans-serif"],

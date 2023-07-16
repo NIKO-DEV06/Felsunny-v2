@@ -45,6 +45,11 @@
 }
 
 @font-face {
+  font-family: "Sofia-Extralight";
+  src: url("/fonts/sofiapro/SofiaProExtraLight.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Sofia-Regular";
   src: url("/fonts/sofiapro/SofiaProRegular.ttf") format("truetype");
 }
