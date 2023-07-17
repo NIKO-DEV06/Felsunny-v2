@@ -26,21 +26,20 @@ export const MenuReveal = ({ children, isOpen }: Props) => {
   );
 };
 
-// export const BgReveal = ({ children }: Props) => {
-
-//   return (
-//     <div className={`fixed z-[50]`}>
-//       {menuIsOpen && (
-//         <motion.div
-//           initial={{ opacity: 0 }}
-//           animate={{ opacity: menuIsOpen ? 1 : 0 }}
-//           transition={{
-//             duration: 0.2,
-//           }}
-//         >
-//           {children}
-//         </motion.div>
-//       )}
-//     </div>
-//   );
-// };
+export const BgReveal = ({ children, isOpen }: Props) => {
+  return (
+    <div className={`fixed z-[25]`}>
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isOpen ? 1 : 0 }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
+          {children}
+        </motion.div>
+      )}
+    </div>
+  );
+};

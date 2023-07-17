@@ -5,7 +5,6 @@ import Image from "next/image";
 import folder from "../../assets/folder-dynamic-premium.png";
 import computer from "../../assets/computer-dynamic-premium.png";
 import bookmark from "../../assets/bookmark-fav-dynamic-premium.png";
-import logo from "@/assets/logo.png";
 import logo2 from "@/assets/logo2.png";
 import Link from "next/link";
 
@@ -13,8 +12,8 @@ const Hero = () => {
   useEffect(() => {
     const handleMouseMove = (e: any) => {
       const { clientX, clientY } = e;
-      const centerX = window.innerWidth / 2;
-      const centerY = window.innerHeight / 2;
+      const centerX = window.innerWidth / 1;
+      const centerY = window.innerHeight / 1;
       const moveX = (centerX - clientX) / centerX;
       const moveY = (centerY - clientY) / centerY;
 
@@ -37,7 +36,7 @@ const Hero = () => {
     };
   }, []);
   return (
-    <section className="text-white h-screen relative">
+    <section className="text-white min-h-screen relative pb-[3rem]">
       <div className="flex justify-end items-center px-[1.5rem] md:px-[4rem] bggreen-600 py-[1.5rem]">
         <Link href={"/"}>
           <Image
@@ -45,7 +44,7 @@ const Hero = () => {
             alt="logo"
             width={220}
             height={220}
-            className=" bg-red400 absolute top-[-20px] md:top-[-15px] left-[-10px] md:left-[40px] invert md:scale-[1.3]"
+            className=" bg-red400 absolute top-[-20px] md:top-[-15px] left-[-10px] md:left-[40px] invert md:scale-[1.3] cursor-pointer"
           />
         </Link>
 
@@ -78,11 +77,11 @@ const Hero = () => {
           government supplies, construction, consultancy services, and property
           sales.
         </p>
-        <button className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] hover:tracking-widest duration-300 z-[10]">
+        <div className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] hover:tracking-widest duration-300 z-[10] cursor-pointer">
           <p className=" font-sofia-medium font-bold text-black md:text-[1.05rem]">
             Learn More
           </p>
-        </button>
+        </div>
       </div>
 
       <div className="parallax-element absolute blur-[2px] left-[15%] bottom-[25%]">

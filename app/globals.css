@@ -109,3 +109,18 @@
 .cubic {
   transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+@keyframes custom-pulse {
+  0%,
+  100% {
+    opacity: 1; /* Starting and ending opacity (fully visible) */
+  }
+  50% {
+    opacity: 0; /* Middle point opacity (semi-transparent) */
+  }
+}
+
+/* Applying the custom animation to the element with animate-pulse */
+.custom-pulse {
+  animation: custom-pulse 1.5s linear infinite; /* Customize the animation duration */
+}

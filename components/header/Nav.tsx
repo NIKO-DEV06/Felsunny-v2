@@ -36,7 +36,10 @@ const Nav = ({
   return (
     <div className="flex flex-col font-sofia text-[3.2rem] md:text-[3.5rem]">
       {links.map((link, index) => (
-        <div className="relative w-fit group h-[4rem] md:h-[5rem] overflow-hidden">
+        <div
+          key={index}
+          className="relative w-fit group h-[4rem] md:h-[5rem] overflow-hidden"
+        >
           <Link onClick={() => setIsOpen(false)} href={link.url} className="">
             <p className="translate-y-[.2rem] md:translate-y-[.8rem] md:group-hover:translate-y-[-5rem] duration-[450ms] cubic">
               {link.name}

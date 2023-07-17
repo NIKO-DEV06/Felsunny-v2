@@ -14,12 +14,12 @@ const Socials = () => {
   ];
   return (
     <div className="flex flex-col gap-[1.5rem]">
-      {socials.map((social) => (
-        <div className="relative w-fit group h-[1.2rem] overflow-hidden bgred-700 font-sofia-extralight hover:font-sofia duration-300">
-          <Link
-            href={social.url}
-            className=" flex flex-col gap-[rem] bg-red400"
-          >
+      {socials.map((social, i) => (
+        <div
+          key={i}
+          className="relative w-fit group h-[1.2rem] overflow-hidden bgred-700 font-sofia-extralight hover:font-sofia duration-300"
+        >
+          <Link href={social.url} className=" flex flex-col gap-[rem]">
             <p className=" md:group-hover:translate-y-[-1.5rem] duration-[450ms] transform ease-in-out">
               {social.name}
             </p>
