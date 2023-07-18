@@ -3,9 +3,9 @@ import spin from "@/assets/spin.svg";
 
 const AboutSection = () => {
   return (
-    <section className="bg-[#121212] text-white min-h-screen pb-[8rem]">
+    <section className="bg-[#121212] text-white min-h-screen pb-[8rem] pt-[2rem]">
       <div className="mt-[3rem] ">
-        <h1 className="font-integral-bold text-[3rem] md:text-[5rem] lg:text-[7.5rem] xl:text-[9rem] px-[1rem] md:px-[3rem] xl:px-[5rem] leading-[3rem] md:leading-[5rem] lg:leading-[7rem] xl:leading-[8.5rem]">
+        <h1 className="font-integral-bold text-[3rem] md:text-[5rem] lg:text-[7.5rem] xl:text-[9rem] px-[2rem] md:px-[4rem] xl:px-[5rem] leading-[3rem] md:leading-[5rem] lg:leading-[7rem] xl:leading-[8.5rem]">
           Felsunny <br />
           Technology{" "}
           <span className="font-serif font-bold hidden md:inline-block custom-pulse">
@@ -40,7 +40,7 @@ const AboutSection = () => {
         </div>
         <div className="flex flex-col gap-[4rem] md:w-[70%]">
           <div className="flex flex-col gap-[1rem] md:flex-row">
-            <p className="uppercase font-sofia tracking-widest text-[1.1rem] md:text-[0.7rem] md:w-[30rem]">
+            <p className="uppercase font-sofia tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[30rem]">
               Our Mission
             </p>
             <p className="font-sofia-regular text-[1.1rem] md:font-sofia">
@@ -52,28 +52,25 @@ const AboutSection = () => {
             </p>
           </div>
           <div className="flex flex-col gap-[3rem] md:gap-[2rem] md:flex-row">
-            <p className="uppercase font-sofia tracking-widest text-[1.1rem] md:text-[0.7rem] md:w-[10rem] md:text-right">
+            <p className="uppercase font-sofia tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[10rem] md:text-right">
               Areas
             </p>
             <div className="flex flex-wrap gap-[0.5rem]">
-              <p className=" border-2 w-fit p-2 rounded-full uppercase font-sofia-regular md:font-sofia">
-                Sales
-              </p>
-              <p className=" border-2 w-fit p-2 rounded-full uppercase font-sofia-regular md:font-sofia">
-                Government Supplies
-              </p>
-              <p className=" border-2 w-fit p-2 rounded-full uppercase font-sofia-regular md:font-sofia">
-                Property Sales
-              </p>
-              <p className=" border-2 w-fit p-2 rounded-full uppercase font-sofia-regular md:font-sofia">
-                Construction & Interior
-              </p>
-              <p className=" border-2 w-fit p-2 rounded-full uppercase font-sofia-regular md:font-sofia">
-                Gadgets & Devices
-              </p>
-              <p className=" border-2 w-fit p-2 rounded-full uppercase font-sofia-regular md:font-sofia">
-                Consultancy
-              </p>
+              {[
+                "Commerce",
+                "Procurement",
+                "Realty",
+                "Construction & Interior",
+                "Gadgets & Devices",
+                "Consultancy",
+              ].map((service, i) => (
+                <p
+                  key={i}
+                  className="border-2 w-fit p-2 rounded-full uppercase font-sofia-regular md:font-sofia"
+                >
+                  {service}
+                </p>
+              ))}
             </div>
           </div>
         </div>

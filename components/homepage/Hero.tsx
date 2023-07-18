@@ -60,7 +60,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-[1.5rem] md:gap-[2.5rem] mt-[12.5rem] md:mt-[7rem]">
+      <div className="flex flex-col justify-center items-center gap-[1.5rem] md:gap-[2.5rem] mt-[12.5rem] md:mt-[7rem] xl:scale-[1.1]">
         <h1 className="text-center font-integral-heavy text-[1.7rem] md:text-[4rem] lg:text-[4.5rem] xl:text-[5rem] px-[1.5rem] md:px-[2.5rem] leading-[1.8rem] md:leading-[5rem] z-[10]">
           Your Partner in <br /> Business{" "}
           <span className="text-transparent stroke-neon inline-block overflow-hidden h-[1.75rem] md:h-[4.55rem] lg:h-[4.8rem] xl:h-[5rem] group">
@@ -112,6 +112,9 @@ const Hero = () => {
           className="animate-float"
         />
       </div>
+      <p className="absolute bottom-[100px] md:bottom-[40px] left-[20px] md:left-[60px] font-sofia-extralight tracking-widest text-[0.9rem]">
+        EST. 2010
+      </p>
     </section>
   );
 };

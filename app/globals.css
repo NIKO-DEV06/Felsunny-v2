@@ -122,5 +122,5 @@
 
 /* Applying the custom animation to the element with animate-pulse */
 .custom-pulse {
-  animation: custom-pulse 1.5s linear infinite; /* Customize the animation duration */
+  animation: custom-pulse 1.2s linear infinite; /* Customize the animation duration */
 }
