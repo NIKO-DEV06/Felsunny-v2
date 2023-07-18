@@ -19,6 +19,7 @@ const Header = () => {
   const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
     ssr: false,
   });
+
   return (
     <>
       <AnimatedCursor
