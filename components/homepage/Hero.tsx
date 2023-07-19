@@ -36,7 +36,7 @@ const Hero = () => {
     };
   }, []);
   return (
-    <section className="text-white min-h-screen relative pb-[3rem]">
+    <section className="text-white min-h-screen relative pb-[3rem] overflow-hidden">
       <div className="flex justify-end items-center px-[1.5rem] md:px-[4rem] bggreen-600 py-[1.5rem]">
         <Link href={"/"}>
           <Image
@@ -77,8 +77,8 @@ const Hero = () => {
           government supplies, construction, consultancy services, and property
           sales.
         </p>
-        <div className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] hover:tracking-widest duration-300 z-[10] cursor-pointer">
-          <p className=" font-sofia-medium font-bold text-black md:text-[1.05rem]">
+        <div className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] hover:tracking-widest duration-300 z-[10] cursor-pointer rounded-full">
+          <p className="font-sofia-medium font-bold text-black md:text-[1.05rem]">
             Learn More
           </p>
         </div>

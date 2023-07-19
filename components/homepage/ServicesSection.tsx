@@ -31,21 +31,25 @@ const ServicesSection = () => {
     },
   ];
   return (
-    <section className="min-h-screen bg-[#121212] text-white">
-      <h1 className="font-integral-bold text-[3rem] mt-[3rem] md:text-[5rem] lg:text-[7.5rem] xl:text-[9rem] px-[1.5rem] md:px-[3rem] xl:px-[5rem] leading-[3rem] md:leading-[5rem] lg:leading-[7rem] xl:leading-[8.5rem]">
+    <section className="min-h-screen bg-[#121212] text-white pb-[7rem]">
+      <h1 className="font-integral-bold text-[3rem] mt-[3rem] md:text-[5rem] lg:text-[7.5rem] xl:text-[9rem] px-[1.5rem] md:px-[3rem] xl:px-[6rem] leading-[3rem] md:leading-[5rem] lg:leading-[7rem] xl:leading-[8.5rem]">
         What we do{" "}
         <span className="font-serif font-bold hidden md:inline-block custom-pulse">
           _
         </span>
       </h1>
-      <p className="font-sofia px-[1.5rem] md:px-[3rem] xl:px-[5rem] mt-[1.5rem]">
+      <p className="font-sofia px-[1.5rem] md:px-[3rem] xl:px-[6rem] mt-[1.5rem]">
         We provide a wide range of business solutions
       </p>
       <div className="mt-[2rem]">
         {services.map((service) => (
           <Link
             href={service.url}
-            className="flex justify-between items-center border-y-[1px] border-[#ffffff46] bgblue-500 px-[1.5rem] md:px-[3rem] xl:px-[5rem] py-[2rem] md:text-[1.6rem] relative group"
+            className={`flex justify-between items-center ${
+              service.name.toLowerCase() === "sales & distribution"
+                ? " border-y-[1px]"
+                : "border-b-[1px]"
+            } border-[#ffffff46] bgblue-500 px-[1.5rem] md:px-[4rem] xl:px-[6rem] py-[1.8rem] md:text-[1.4rem] relative group`}
           >
             <p className="uppercase font-sofia">{service.name}</p>
             <Image

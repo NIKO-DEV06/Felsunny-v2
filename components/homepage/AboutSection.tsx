@@ -14,8 +14,8 @@ const AboutSection = () => {
         </h1>
       </div>
       <div className="overflow-hidden absolute translate-x-1/2 right-1/2 w-[20rem] md:w-[25rem] md:h-[25rem] lg:w-[27rem] lg:h-[27rem] h-[20rem] rounded-full mx-auto mt-[2rem]">
-        <video autoPlay loop muted playsInline>
-          <source
+        <video src="/hero.mp4" autoPlay loop muted playsInline>
+          {/* <source
             data-src="https://cdn.cuberto.com/cb/hello/overview/2.webm"
             type="video/webm"
             src="https://cdn.cuberto.com/cb/hello/overview/2.webm"
@@ -24,10 +24,10 @@ const AboutSection = () => {
             data-src="https://cdn.cuberto.com/cb/hello/overview/2.mp4"
             type="video/mp4"
             src="https://cdn.cuberto.com/cb/hello/overview/2.mp4"
-          ></source>
+          ></source> */}
         </video>
       </div>
-      <hr className="mt-[25rem] md:mt-[31rem] md:mx-[4rem] lg:mt-[35rem]" />
+      <hr className="mt-[25rem] md:mt-[31rem] md:mx-[4rem] lg:mt-[35rem] border-[#ffffff46]" />
       <div className="mt-[1.5rem] md:mt-[4rem] px-[1rem] md:flex md:flex-row md:mx-[3rem]">
         <div className="pb-[2rem] md:w-1/2">
           <Image
@@ -66,7 +66,7 @@ const AboutSection = () => {
               ].map((service, i) => (
                 <p
                   key={i}
-                  className="border-2 w-fit p-2 rounded-full uppercase font-sofia-regular md:font-sofia"
+                  className="border-2 w-fit p-2 rounded-full uppercase font-sofia-regular md:font-sofia text-[0.9rem]"
                 >
                   {service}
                 </p>

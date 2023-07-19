@@ -14,7 +14,7 @@ const Header = () => {
 
   const menuClass = isOpen
     ? "hamburger--vortex is-active"
-    : "hamburger--vortex invert";
+    : "hamburger--vortex ivert";
 
   const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
     ssr: false,
@@ -46,7 +46,7 @@ const Header = () => {
           ".link",
         ]}
       />
-      <div className="fixed right-[1rem] md:right-[3.5rem] top-[2rem] md:top-[2.4rem] z-[40]">
+      <div className="fixed right-[1rem] md:right-[3.5rem] top-[2rem] md:top-[2.4rem] z-[40] mix-blend-difference invert">
         <button
           className={`${menuClass} scale-[0.65] scale-x-[0.7]`}
           type="button"
