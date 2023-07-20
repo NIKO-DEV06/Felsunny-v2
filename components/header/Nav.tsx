@@ -29,8 +29,8 @@ const Nav = ({
       url: "/contact",
     },
     {
-      name: "FAQ",
-      url: "/faq",
+      name: "Privacy Policy",
+      url: "/privacy-policy",
     },
   ];
   return (
