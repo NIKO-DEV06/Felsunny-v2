@@ -28,10 +28,10 @@ const Nav = ({
       name: "Get in Touch",
       url: "/contact",
     },
-    {
-      name: "Privacy Policy",
-      url: "/privacy-policy",
-    },
+    // {
+    //   name: "Privacy Policy",
+    //   url: "/privacy-policy",
+    // },
   ];
   return (
     <div className="flex flex-col font-sofia text-[3.2rem] md:text-[3.5rem]">

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Menu from "./Menu";
 import dynamic from "next/dynamic";
 import curveText from "@/assets/textcurve.svg";
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,23 +58,28 @@ const Header = () => {
           </span>
         </button>
       </div>
-      <div className="fixed right-[35px] bottom-[35px] md:right-[50px] md:bottom-[50px] rounded-full overflow-hidden w-[70px] md:w-[90px] bg-[#252426] cursor-pointer z-[21]">
-        <video
-          src="https://cdn.cuberto.com/cb/intouch/1.mp4"
-          autoPlay
-          loop={true}
-          muted={true}
-        ></video>
-      </div>
+      <div className="group">
+        <Link
+          href={"/contact"}
+          className="fixed right-[35px] bottom-[35px] md:right-[50px] md:bottom-[50px] rounded-full overflow-hidden w-[70px] md:w-[90px] bg-[#252426] cursorpointer z-[22]"
+        >
+          <video
+            src="https://cdn.cuberto.com/cb/intouch/1.mp4"
+            autoPlay
+            loop={true}
+            muted={true}
+          ></video>
+        </Link>
 
-      <div className="fixed right-[20px] bottom-[20px] md:right-[45px] md:bottom-[45px] md:scale-[1.3] md:hover:scale-[1.5] duration-300 z-[21]">
-        <Image
-          src={curveText}
-          alt="curve-text"
-          width={100}
-          height={100}
-          className="animate-spin-slow"
-        />
+        <div className="fixed right-[20px] bottom-[20px] md:right-[45px] md:bottom-[45px] md:scale-[1.3] md:group-hover:scale-[1.5] duration-300 z-[21]">
+          <Image
+            src={curveText}
+            alt="curve-text"
+            width={100}
+            height={100}
+            className="animate-spin-slow"
+          />
+        </div>
       </div>
       <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
     </>

@@ -53,38 +53,110 @@ const Footer = () => {
               © 2023 Felsunny Technology LTD. All Rights Reserved
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center gap-[1.5rem] mt-[2rem]">
-            <div className="flex justify-between gap-[3rem]">
-              <Image
-                src={linkedin}
-                alt="linkedin"
-                width={25}
-                height={25}
-                className="invert opacity-50 hover:opacity-100 duration-200"
-              />
-              <Image
-                src={twitter}
-                alt="twitter"
-                width={25}
-                height={25}
-                className="invert opacity-50 hover:opacity-100 duration-200"
-              />
+          <div className="flex flex-col justify-center items-center gap-[1.5rem] mt-[2rem] lg:hidden">
+            <div className="flex justify-between gap-[3rem] ">
+              <Link
+                href={"https://www.linkedin.com/in/ayeniko-felix-0a0a4337/"}
+              >
+                <Image
+                  src={linkedin}
+                  alt="linkedin"
+                  width={25}
+                  height={25}
+                  className="invert opacity-50 hover:opacity-100 duration-200"
+                />
+              </Link>
+              <Link href={"https://mobile.twitter.com/felsunny"}>
+                <Image
+                  src={twitter}
+                  alt="twitter"
+                  width={25}
+                  height={25}
+                  className="invert opacity-50 hover:opacity-100 duration-200"
+                />
+              </Link>
             </div>
             <div className="flex justify-between gap-[3rem]">
-              <Image
-                src={facebook}
-                alt="facebook"
-                width={25}
-                height={25}
-                className="invert opacity-50 hover:opacity-100 duration-200"
-              />
-              <Image
-                src={instagram}
-                alt="instagram"
-                width={30}
-                height={30}
-                className="invert opacity-50 hover:opacity-100 duration-200"
-              />
+              <Link href={"https://www.facebook.com/felsunny/"}>
+                <Image
+                  src={facebook}
+                  alt="facebook"
+                  width={25}
+                  height={25}
+                  className="invert opacity-50 hover:opacity-100 duration-200"
+                />
+              </Link>
+              <Link
+                href={"https://www.instagram.com/felsunnytechnology/?hl=en"}
+              >
+                <Image
+                  src={instagram}
+                  alt="instagram"
+                  width={30}
+                  height={30}
+                  className="invert opacity-50 hover:opacity-100 duration-200"
+                />
+              </Link>
+            </div>
+          </div>
+          {/* //////// */}
+          <div className="hidden lg:flex flex-col justify-center items-center gap-[1.5rem] mt-[2rem] text-[1.5rem]">
+            <div className="flex justify-between gap-[3rem] translate-x-[-1.6rem]">
+              <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-sofia-extralight hover:font-sofia duration-300">
+                <Link
+                  href={"https://www.linkedin.com/in/ayeniko-felix-0a0a4337/"}
+                  className="flex flex-col gap-[rem]"
+                >
+                  <p className="md:group-hover:translate-y-[-1.7rem] duration-[450ms] transform ease-in-out">
+                    Linkedin
+                  </p>
+                  <p className="group-hover:translate-y-[-2.1rem] duration-[450ms] transform ease-in-out">
+                    Linkedin
+                  </p>
+                </Link>
+              </div>
+              <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-sofia-extralight hover:font-sofia duration-300 translate-x-[0.7rem]">
+                <Link
+                  href={"https://mobile.twitter.com/felsunny"}
+                  className=" flex flex-col gap-[rem]"
+                >
+                  <p className="md:group-hover:translate-y-[-1.7rem] duration-[450ms] transform ease-in-out">
+                    Twitter
+                  </p>
+                  <p className="group-hover:translate-y-[-2.1rem] duration-[450ms] transform ease-in-out">
+                    Twitter
+                  </p>
+                </Link>
+              </div>
+            </div>
+            <div className="flex justify-between gap-[3rem]">
+              <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-sofia-extralight hover:font-sofia duration-300">
+                <Link
+                  href={"https://www.facebook.com/felsunny/"}
+                  className=" flex flex-col gap-[rem]"
+                >
+                  <p className=" md:group-hover:translate-y-[-1.7rem] duration-[450ms] transform ease-in-out">
+                    Facebook
+                  </p>
+                  <p className="group-hover:translate-y-[-2.1rem] duration-[450ms] transform ease-in-out">
+                    Facebook
+                  </p>
+                </Link>
+              </div>
+
+              <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-sofia-extralight hover:font-sofia duration-300">
+                <Link
+                  href={"https://www.instagram.com/felsunnytechnology/?hl=en"}
+                  className=" flex flex-col gap-[rem]"
+                >
+                  <p className=" md:group-hover:translate-y-[-1.7rem] duration-[450ms] transform ease-in-out">
+                    Instagram
+                  </p>
+                  <p className="group-hover:translate-y-[-2.1rem] duration-[450ms] transform ease-in-out">
+                    Instagram
+                  </p>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
