@@ -112,7 +112,7 @@ const Hero = () => {
           className="animate-float"
         />
       </div>
-      <p className="absolute bottom-[100px] md:bottom-[40px] left-[20px] md:left-[60px] font-sofia-extralight tracking-widest text-[0.9rem]">
+      <p className="absolute bottom-[100px] md:bottom-[40px] left-[20px] md:left-[70px] font-sofia-extralight tracking-widest text-[0.9rem]">
         EST. 2010
       </p>
     </section>

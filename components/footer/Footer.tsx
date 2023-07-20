@@ -15,7 +15,7 @@ const Footer = () => {
         name="format-detection"
         content="telephone=no, date=no, email=no, address=no"
       />
-      <footer className="bg-[#121212] min-h-[68vh] md:min-h-screen text-white">
+      <footer className="bg-[#121212] min-h-[68vh] md:min-h-screen text-white pb-[4rem]">
         <Image
           src={logo}
           alt="logo"
