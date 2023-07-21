@@ -1,19 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // webpack: (config, { isServer }) => {
-  //   config.module.rules.push({
-  //     test: /\.(png|jpe?g|gif|svg|eot|otf|ttf|woff|woff2)$/i,
-  //     loader: "file-loader",
-  //     options: {
-  //       publicPath: "/_next",
-  //       name: "static/media/[name].[hash].[ext]",
-  //     },
-  //   });
-  //   if (!isServer) {
-  //     config.resolve.fallback.fs = false;
-  //   }
-  //   return config;
-  // },
+  env: {
+    NEXT_SERVICE_ID: process.env.NEXT_SERVICE_ID,
+    NEXT_TEMPLATE_ID: process.env.NEXT_TEMPLATE_ID,
+    NEXT_KEY_ID: process.env.NEXT_KEY_ID,
+  },
 };
 
 module.exports = nextConfig;

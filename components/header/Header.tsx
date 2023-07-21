@@ -5,9 +5,11 @@ import Menu from "./Menu";
 import dynamic from "next/dynamic";
 import curveText from "@/assets/textcurve.svg";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -58,7 +60,7 @@ const Header = () => {
           </span>
         </button>
       </div>
-      <div className="group">
+      <div className={`group ${pathname === "/contact" && "hidden"}`}>
         <Link
           href={"/contact"}
           className="fixed right-[35px] bottom-[35px] md:right-[50px] md:bottom-[50px] rounded-full overflow-hidden w-[70px] md:w-[90px] bg-[#252426] cursorpointer z-[22]"
