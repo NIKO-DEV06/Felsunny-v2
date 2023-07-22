@@ -7,6 +7,7 @@ import computer from "../../assets/computer-dynamic-premium.png";
 import bookmark from "../../assets/bookmark-fav-dynamic-premium.png";
 
 import UnfixedHeader from "../header/UnfixedHeader";
+import Link from "next/link";
 
 const Hero = () => {
   useEffect(() => {
@@ -56,11 +57,14 @@ const Hero = () => {
           government supplies, construction, consultancy services, and property
           sales.
         </p>
-        <div className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] hover:tracking-widest duration-300 z-[10] cursor-pointer rounded-full border-2 border-white">
+        <Link
+          href={"/about"}
+          className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] hover:tracking-widest duration-300 z-[10] cursor-pointer rounded-full border-2 border-white"
+        >
           <p className="font-sofia-medium font-bold text-black md:text-[1.05rem]">
             Learn More
           </p>
-        </div>
+        </Link>
       </div>
 
       <div className="parallax-element absolute blur-[2px] left-[15%] bottom-[25%]">

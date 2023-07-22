@@ -1,13 +1,19 @@
-import Link from "next/link";
-import React from "react";
+"use client";
+import { useRouter } from "next/navigation";
 
 const GetInTouch = () => {
+  const router = useRouter();
   return (
     <aside className="bg-white rounded-[2rem] md:rounded-[2.5rem] md:mx-[3rem] xl:mx-[6rem] py-[4rem] md:py-[7rem] px-[1.5rem] md:px-[7rem] mb-[7rem]">
       <h1 className="font-integral text-[1.3rem] md:text-[2rem] mb-[1.5rem]">
         Tell us about your project
       </h1>
-      <button className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] hover:tracking-wider hover:scale-x-110 duration-300 z-[10] cursor-pointer rounded-full font-sofia-medium font-bold border-black border-2 mb-[2rem]">
+      <button
+        onClick={() => {
+          router.push("/contact");
+        }}
+        className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] md:hover:tracking-wider duration-300 z-[10] cursor-pointer rounded-full font-sofia-medium font-bold border-black border-2 mb-[2rem]"
+      >
         Get in touch
       </button>
       <hr className="mb-[1.5rem] md:mb-[2.5rem]" />
