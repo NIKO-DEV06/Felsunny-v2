@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction } from "react";
 import Nav from "./Nav";
 import Socials from "./Socials";
 import Link from "next/link";
-import { BgReveal, MenuReveal } from "@/utils/MenuReveal";
+import { BgReveal, MenuReveal } from "@/components/utils/MenuReveal";
 
 const Menu = ({
   isOpen,
