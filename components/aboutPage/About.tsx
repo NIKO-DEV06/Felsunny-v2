@@ -107,13 +107,26 @@ const About = () => {
             </div>
           </div>
         </div>
+        {/* /// */}
+        <div className="absolute translate-x-1/2 right-1/2 w-[20rem] md:w-[25rem] md:h-[25rem] lg:w-[27rem] lg:h-[27rem] h-[20rem] roundedfull mx-auto mt-[4rem] lg:mt-[10rem] lg:scale-[1.3]">
+          <video
+            src="/ball.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="rounded-full"
+          ></video>
+        </div>
+        {/* /// */}
+
         <Reveal y={200} width="100%">
-          <h1 className="font-integral-bold text-center text-[3rem] md:text-[5rem] lg:text-[7.5rem] xl:text-[9rem] px-[2rem] md:px-[4rem] xl:px-[5rem] leading-[3rem] md:leading-[5rem] lg:leading-[7rem] xl:leading-[8.5rem] mt-[4rem] md:mt-[9rem] mb-[4rem] lg:mb-[5rem]">
+          <h1 className="font-integral-bold text-center text-[3rem] md:text-[5rem] lg:text-[7.5rem] xl:text-[9rem] px-[2rem] md:px-[4rem] xl:px-[5rem] leading-[3rem] md:leading-[5rem] lg:leading-[7rem] xl:leading-[8.5rem] mt-[21rem] md:mt-[25rem] lg:mt-[33rem] mb-[4rem] lg:mb-[5rem]">
             Meet the CEO
           </h1>
         </Reveal>
         <div className="flex flex-col justify-center items-center">
-          <div className="overflow-hidden rounded-full">
+          <div className="overflow-hidden rounded-full w-auto h-auto">
             <Image
               src={ceo}
               width={280}
