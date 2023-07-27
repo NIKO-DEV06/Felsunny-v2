@@ -110,7 +110,7 @@ const Contact = () => {
             <Reveal y={50}>
               <button
                 key={index}
-                className={`border-[1px] border-[#00000045] w-fit px-[1.3rem] md:px-[1.8rem] py-[0.8rem] md:py-[1.2rem] font-sofia-regular md:font-sofia rounded-full text-[0.9rem] md:text-[1.2rem] group ${
+                className={`border-[1px] mb-[0.3rem] border-[#00000045] w-fit px-[1.3rem] md:px-[1.8rem] py-[0.8rem] md:py-[1.2rem] font-sofia-regular md:font-sofia rounded-full text-[0.9rem] md:text-[1.2rem] group ${
                   selectedServices.includes(service)
                     ? "bg-black text-white transition duration-[250ms] ease-in-out"
                     : ""
