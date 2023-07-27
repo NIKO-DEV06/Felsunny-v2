@@ -7,9 +7,10 @@ interface Props {
   children: JSX.Element;
   width?: "fit-content" | "100%";
   y: number;
+  z?: "z-0" | string;
 }
 
-export const Reveal = ({ children, width = "fit-content", y }: Props) => {
+export const Reveal = ({ children, width = "fit-content", y, z }: Props) => {
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 
@@ -28,6 +29,7 @@ export const Reveal = ({ children, width = "fit-content", y }: Props) => {
 
   return (
     <div
+      className={`${z}`}
       ref={ref}
       style={{
         position: "relative",

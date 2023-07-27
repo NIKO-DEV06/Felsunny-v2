@@ -114,7 +114,7 @@ const Contact = () => {
                 <p className="translate-y-[.2rem] md:translate-y[-1rem] md:group-hover:translate-y-[-2rem] duration-[30ms] cubic">
                   {service}
                 </p>
-                <p className="md:group-hover:translate-y-[-1.8rem] duration-[300ms] cubic">
+                <p className="md:group-hover:translate-y-[-1.8rem] hidden md:block duration-[300ms] cubic">
                   {service}
                 </p>
               </div>

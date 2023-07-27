@@ -14,7 +14,7 @@ const Menu = ({
   return (
     <>
       <MenuReveal isOpen={isOpen}>
-        <div className="fixed bg-white z-[30] w-screen md:w-[689px] md:right-0 h-screen px-[2rem] overflow-scroll">
+        <div className="fixed bg-white z-[30] w-screen md:w-[689px] md:right-0 h-screen overflow-scroll">
           <p className="font-sofia-bold text-[1.5rem] mt-[1.5rem] md:hidden">
             Felsunny
           </p>

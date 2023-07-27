@@ -58,18 +58,18 @@ const Hero = () => {
           </h1>
         </Reveal>
 
-        <Reveal y={100}>
-          <p className="font-sofia px-[2rem] md:mx-auto text-center md:w-[70%] md:text-[1.15rem] z-[10]">
+        <Reveal y={100} z="z-[10]">
+          <p className="font-sofia px-[2rem] md:mx-auto text-center md:w-[70%] md:text-[1.15rem] ">
             We provide business solutions, including sales and distribution,
             government supplies, construction, consultancy services, and
             property sales.
           </p>
         </Reveal>
-        <Reveal y={150}>
+        <Reveal y={150} z="z-[10]">
           <button
             onClick={() => router.push("/about")}
             //   href={"/about"}
-            className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] hover:tracking-widest duration-300 z-[10] cursor-pointer rounded-full border-2 border-white "
+            className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] hover:tracking-widest duration-300 cursor-pointer rounded-full border-2 border-white "
           >
             <p className="font-sofia-medium font-bold text-black md:text-[1.05rem]">
               Learn More
@@ -107,7 +107,7 @@ const Hero = () => {
             alt="bookmark"
             width={100}
             height={100}
-            className="animate-float"
+            className="animate-float z-[-10]"
           />
         </ImageReveal>
       </div>
