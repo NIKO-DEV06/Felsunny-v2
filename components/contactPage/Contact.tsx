@@ -8,7 +8,6 @@ import emailjs from "@emailjs/browser";
 import * as yup from "yup";
 import toast, { Toaster } from "react-hot-toast";
 import { Reveal } from "../utils/Reveal";
-import { ImageReveal } from "../utils/ImageReveal";
 
 const Contact = () => {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
