@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import UnfixedHeader from "../header/UnfixedHeader";
@@ -8,6 +9,10 @@ import emailjs from "@emailjs/browser";
 import * as yup from "yup";
 import toast, { Toaster } from "react-hot-toast";
 import { Reveal } from "../utils/Reveal";
+import { ImageReveal } from "../utils/ImageReveal";
+import at from "../../assets/at-dynamic-premium.png";
+import phone from "../../assets/phone-incoming-dynamic-premium.png";
+import chat from "../../assets/chat-bubble-dynamic-premium.png";
 
 const Contact = () => {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
@@ -81,7 +86,7 @@ const Contact = () => {
       <Toaster position="top-center" reverseOrder={false} />
       <section className="min-h-screen bg-white text-black pb-[8rem]">
         <UnfixedHeader invert="" color="text-black" />
-        <Reveal y={100}>
+        <Reveal y={100} z="z-[10]">
           <h1 className="font-sofia-regular mt-[4.5rem] md:mt-[7rem] mb-[2rem] md:mb-[5rem] text-[3rem] md:text-[4.7rem] md:leading-[4.8rem] px-[2rem] md:px-[9rem] leading-[3.3rem]">
             Hey! Tell us all
             <br /> the things{" "}
@@ -99,14 +104,14 @@ const Contact = () => {
             </motion.span>
           </h1>
         </Reveal>
-        <Reveal y={80}>
+        <Reveal y={80} z="z-[10]">
           <p className="font-sofia-regular md:font-sofia px-[2rem] md:px-[9rem] text-[1.7rem] md:text-[2.3rem] opacity-30 mb-[2rem]">
             I'm interested in...
           </p>
         </Reveal>
         <div className="px-[2rem] md:px-[9rem] flex flex-wrap gap-[0.7rem] md:gap-[1rem]">
           {services.map((service, index) => (
-            <Reveal y={50}>
+            <Reveal y={50} z="z-[10]">
               <button
                 key={index}
                 className={`border-[1px] mb-[0.3rem] border-[#00000045] w-fit px-[1.3rem] md:px-[1.8rem] py-[0.8rem] md:py-[1.2rem] font-sofia-regular md:font-sofia rounded-full text-[0.9rem] md:text-[1.2rem] group ${
@@ -135,7 +140,7 @@ const Contact = () => {
           onSubmit={handleSubmit(submitFormHandler)}
           className="px-[2rem] md:px-[9rem] mt-[4rem] md:pt-[5rem] flex flex-col gap-[3rem] md:gap-[5rem]"
         >
-          <Reveal y={100} width="100%">
+          <Reveal z="z-[10]" y={100} width="100%">
             <div>
               <input
                 type="text"
@@ -154,7 +159,7 @@ const Contact = () => {
               </p>
             </div>
           </Reveal>
-          <Reveal y={100} width="100%">
+          <Reveal z="z-[10]" y={100} width="100%">
             <div>
               <input
                 type="text"
@@ -173,7 +178,7 @@ const Contact = () => {
               </p>
             </div>
           </Reveal>
-          <Reveal y={100} width="100%">
+          <Reveal z="z-[10]" y={100} width="100%">
             <div>
               <input
                 type="text"
@@ -212,6 +217,39 @@ const Contact = () => {
             </button>
           </Reveal>
         </form>
+        <div className="parallax-element absolute blur-[2px] left-[15%] opacity-[30%] bottom-[25%] md:bottom-[20%]">
+          <ImageReveal>
+            <Image
+              src={at}
+              alt="at"
+              width={100}
+              height={100}
+              className="animate-float"
+            />
+          </ImageReveal>
+        </div>
+        <div className="parallax-element absolute top-[10%] md:top-[15%] md:left-[50%] blur-[2px] opacity-30 left-[40%]">
+          <ImageReveal>
+            <Image
+              src={phone}
+              alt="phone"
+              width={100}
+              height={100}
+              className="animate-float"
+            />
+          </ImageReveal>
+        </div>
+        <div className="parallax-element absolute right-[15%] blur-[2px] opacity-30 bottom-[35%] md:bottom-[20%]">
+          <ImageReveal>
+            <Image
+              src={chat}
+              alt="chat"
+              width={100}
+              height={100}
+              className="animate-float z-[-10]"
+            />
+          </ImageReveal>
+        </div>
       </section>
     </>
   );
