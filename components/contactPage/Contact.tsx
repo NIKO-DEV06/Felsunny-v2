@@ -140,8 +140,8 @@ const Contact = () => {
           onSubmit={handleSubmit(submitFormHandler)}
           className="px-[2rem] md:px-[9rem] mt-[4rem] md:pt-[5rem] flex flex-col gap-[3rem] md:gap-[5rem]"
         >
-          <Reveal z="z-[10]" y={100} width="100%">
-            <div>
+          <ImageReveal>
+            <div className="relative">
               <input
                 type="text"
                 {...register("name")}
@@ -158,8 +158,8 @@ const Contact = () => {
                 {errors.name?.message}
               </p>
             </div>
-          </Reveal>
-          <Reveal z="z-[10]" y={100} width="100%">
+          </ImageReveal>
+          <ImageReveal>
             <div>
               <input
                 type="text"
@@ -177,8 +177,8 @@ const Contact = () => {
                 {errors.email?.message}
               </p>
             </div>
-          </Reveal>
-          <Reveal z="z-[10]" y={100} width="100%">
+          </ImageReveal>
+          <ImageReveal>
             <div>
               <input
                 type="text"
@@ -196,7 +196,7 @@ const Contact = () => {
                 {errors.message?.message}
               </p>
             </div>
-          </Reveal>
+          </ImageReveal>
 
           <input
             type="hidden"
