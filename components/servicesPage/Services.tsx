@@ -100,6 +100,7 @@ const Services = () => {
       <div className="px-[1.5rem] flex flex-col gap-[7rem] mt-[3rem] pb-[5rem]">
         {services.map((service, index) => (
           <div
+            key={index}
             className={`flex flex-col ${
               index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             } gap-[1rem] md:gap-[2rem] items-center md:justify-center`}

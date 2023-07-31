@@ -111,9 +111,8 @@ const Contact = () => {
         </Reveal>
         <div className="px-[2rem] md:px-[9rem] flex flex-wrap gap-[0.7rem] md:gap-[1rem]">
           {services.map((service, index) => (
-            <Reveal y={50} z="z-[10]">
+            <Reveal key={index} y={50} z="z-[10]">
               <button
-                key={index}
                 className={`border-[1px] mb-[0.3rem] border-[#00000045] w-fit px-[1.3rem] md:px-[1.8rem] py-[0.8rem] md:py-[1.2rem] font-sofia-regular md:font-sofia rounded-full text-[0.9rem] md:text-[1.2rem] group ${
                   selectedServices.includes(service)
                     ? "bg-black text-white transition duration-[250ms] ease-in-out"
