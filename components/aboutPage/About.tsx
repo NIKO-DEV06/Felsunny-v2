@@ -10,7 +10,7 @@ import { ImageReveal } from "../utils/ImageReveal";
 
 const About = () => {
   return (
-    <section className="min-h-screen bg-[#121212] text-white pb-[5rem]">
+    <section className="min-h-screen bg-[#121212] text-white pb-[5rem] overflow-x-hidden">
       <UnfixedHeader invert="invert" color="text-[#e0fd60]" />
       <div className="mt-[6rem] md:mt-[3rem]">
         <Reveal y={200} width="100%">

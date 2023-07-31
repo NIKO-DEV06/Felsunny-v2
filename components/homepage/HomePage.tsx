@@ -6,7 +6,7 @@ import GetInTouch from "../footer/GetInTouch";
 
 const HomePage = () => {
   return (
-    <main className="bg-[#121212] flex flex-col">
+    <main className="bg-[#121212] flex flex-col overflow-x-hidden">
       <Hero />
       <AboutSection />
       <ServicesSection />
