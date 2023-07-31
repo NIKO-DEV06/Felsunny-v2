@@ -7,10 +7,16 @@ const Socials = () => {
   const pathname = usePathname();
 
   const socials = [
-    { name: "LinkedIn", url: "" },
-    { name: "Twitter", url: "" },
-    { name: "Facebook", url: "" },
-    { name: "Instagram", url: "" },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/ayeniko-felix-0a0a4337/",
+    },
+    { name: "Twitter", url: "https://mobile.twitter.com/felsunny" },
+    { name: "Facebook", url: "https://www.facebook.com/felsunny/" },
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/felsunnytechnology/?hl=en",
+    },
   ];
   return (
     <div className="flex flex-col gap-[1.5rem]">
