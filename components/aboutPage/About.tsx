@@ -4,8 +4,8 @@ import { Reveal } from "../utils/Reveal";
 import history from "@/assets/history.svg";
 import inspiration from "@/assets/inspiration.svg";
 import value from "@/assets/value.svg";
-import ceo from "@/assets/ceo.jpg";
-import ceo2 from "@/assets/ceo2.jpg";
+import ceo from "@/assets/ceo3.jpg";
+
 import { ImageReveal } from "../utils/ImageReveal";
 
 const About = () => {
