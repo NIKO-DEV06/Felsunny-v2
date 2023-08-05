@@ -4,7 +4,7 @@ import { Reveal } from "../utils/Reveal";
 import history from "@/assets/history.svg";
 import inspiration from "@/assets/inspiration.svg";
 import value from "@/assets/value.svg";
-import ceo from "@/assets/ceo3.jpg";
+import ceo from "@/assets/ceo3.png";
 
 import { ImageReveal } from "../utils/ImageReveal";
 
