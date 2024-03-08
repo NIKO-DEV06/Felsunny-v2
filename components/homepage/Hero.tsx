@@ -59,7 +59,7 @@ const Hero = () => {
         </Reveal>
 
         <Reveal y={100} z="z-[10]">
-          <p className="font-sofia px-[2rem] md:mx-auto text-center md:w-[70%] md:text-[1.15rem] ">
+          <p className="px-[2rem] font-[300] md:mx-auto text-center md:w-[70%] md:text-[1.15rem] ">
             We provide business solutions, including sales and distribution,
             government supplies, construction, consultancy services, and
             property sales.
@@ -71,9 +71,7 @@ const Hero = () => {
             //   href={"/about"}
             className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] hover:tracking-widest duration-300 cursor-pointer rounded-full border-2 border-white "
           >
-            <p className="font-sofia-medium font-bold text-black md:text-[1.05rem]">
-              Learn More
-            </p>
+            <p className="font-bold text-black md:text-[1.05rem]">Learn More</p>
           </button>
         </Reveal>
       </div>
@@ -112,7 +110,7 @@ const Hero = () => {
         </ImageReveal>
       </div>
 
-      <p className="absolute bottom-[100px] md:bottom-[40px] left-[20px] md:left-[70px] font-sofia-extralight tracking-widest text-[0.9rem]">
+      <p className="absolute bottom-[100px] md:bottom-[40px] left-[20px] md:left-[70px] font-[200] tracking-widest text-[0.9rem]">
         EST. 2010
       </p>
     </section>

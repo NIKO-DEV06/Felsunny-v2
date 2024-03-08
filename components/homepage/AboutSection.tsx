@@ -52,11 +52,11 @@ const AboutSection = () => {
         <div className="flex flex-col gap-[4rem] md:w-[70%]">
           <Reveal y={150}>
             <div className="flex flex-col gap-[1rem] md:flex-row">
-              <p className="uppercase font-sofia tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[30rem]">
+              <p className="uppercase font-[300] tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[30rem]">
                 Our Mission
               </p>
 
-              <p className="font-sofia-regular text-[1.1rem] md:font-sofia">
+              <p className="font-[400] text-[1.1rem] md:font-[300]">
                 At Felsunny Technology, our mission is to empower businesses by
                 offering innovative and reliable solutions that drive growth and
                 success. We believe in fostering long-term partnerships with our
@@ -67,7 +67,7 @@ const AboutSection = () => {
           </Reveal>
           <Reveal y={100}>
             <div className="flex flex-col gap-[3rem] md:gap-[2rem] md:flex-row">
-              <p className="uppercase font-sofia tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[10rem] md:text-right">
+              <p className="uppercase font-[300] tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[10rem] md:text-right">
                 Areas
               </p>
               <div className="flex flex-wrap gap-[0.5rem]">
@@ -81,7 +81,7 @@ const AboutSection = () => {
                 ].map((service, i) => (
                   <p
                     key={i}
-                    className="border-2 w-fit p-2 rounded-full uppercase font-sofia-regular md:font-sofia text-[0.9rem]"
+                    className="border-2 w-fit p-2 rounded-full uppercase font-[400] md:font-[300] text-[0.9rem]"
                   >
                     {service}
                   </p>

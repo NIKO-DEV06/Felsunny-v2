@@ -34,7 +34,7 @@ const Nav = ({
     // },
   ];
   return (
-    <div className="flex flex-col font-sofia text-[3.2rem] md:text-[3.5rem]">
+    <div className="flex flex-col font-[300] text-[3.2rem] md:text-[3.5rem]">
       {links.map((link, index) => (
         <div
           key={index}

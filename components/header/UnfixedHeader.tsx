@@ -23,7 +23,7 @@ const UnfixedHeader = ({
           />
         </Link>
         <p
-          className={`font-sofia ${color} mr-[3.5rem] md:text-[1.2rem] hidden md:block z-[10] mt-[15px]`}
+          className={`font-[300] ${color} mr-[3.5rem] md:text-[1.2rem] hidden md:block z-[10] mt-[15px]`}
         >
           menu
         </p>

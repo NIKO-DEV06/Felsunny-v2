@@ -87,7 +87,7 @@ const Contact = () => {
       <section className="min-h-screen bg-white text-black pb-[8rem]">
         <UnfixedHeader invert="" color="text-black" />
         <Reveal y={100} z="z-[10]">
-          <h1 className="font-sofia-regular mt-[4.5rem] md:mt-[7rem] mb-[2rem] md:mb-[5rem] text-[3rem] md:text-[4.7rem] md:leading-[4.8rem] px-[2rem] md:px-[9rem] leading-[3.3rem]">
+          <h1 className="font-[400] mt-[4.5rem] md:mt-[7rem] mb-[2rem] md:mb-[5rem] text-[3rem] md:text-[4.7rem] md:leading-[4.8rem] px-[2rem] md:px-[9rem] leading-[3.3rem]">
             Hey! Tell us all
             <br /> the things{" "}
             <motion.span
@@ -105,7 +105,7 @@ const Contact = () => {
           </h1>
         </Reveal>
         <Reveal y={80} z="z-[10]">
-          <p className="font-sofia-regular md:font-sofia px-[2rem] md:px-[9rem] text-[1.7rem] md:text-[2.3rem] opacity-30 mb-[2rem]">
+          <p className="font-[400] md:font-[300] px-[2rem] md:px-[9rem] text-[1.7rem] md:text-[2.3rem] opacity-30 mb-[2rem]">
             I'm interested in...
           </p>
         </Reveal>
@@ -113,7 +113,7 @@ const Contact = () => {
           {services.map((service, index) => (
             <Reveal key={index} y={50} z="z-[10]">
               <button
-                className={`border-[1px] mb-[0.3rem] border-[#00000045] w-fit px-[1.3rem] md:px-[1.8rem] py-[0.8rem] md:py-[1.2rem] font-sofia-regular md:font-sofia rounded-full text-[0.9rem] md:text-[1.2rem] group ${
+                className={`border-[1px] mb-[0.3rem] border-[#00000045] w-fit px-[1.3rem] md:px-[1.8rem] py-[0.8rem] md:py-[1.2rem] font-[400] md:font-[300] rounded-full text-[0.9rem] md:text-[1.2rem] group ${
                   selectedServices.includes(service)
                     ? "bg-black text-white transition duration-[250ms] ease-in-out"
                     : ""
@@ -151,9 +151,9 @@ const Contact = () => {
                   errors.name
                     ? "border-b-[#ff0000] focus:border-b-[#ff0000]"
                     : "border-b-[#00000045] focus:border-b-black"
-                } w-full rounded-none appearance-none outline-none pb-[0.6rem] font-sofia-regular text-[1.7rem] placeholder:opacity-50 md:text-[2.5rem] md:font-sofia relative`}
+                } w-full rounded-none appearance-none outline-none pb-[0.6rem] font-[400] text-[1.7rem] placeholder:opacity-50 md:text-[2.5rem] md:font-[300] relative`}
               />
-              <p className="text-[#ff0000] font-sofia md:text-[1.1rem] text-left pt-1 md:pt-[1rem] absolute tracking-wide">
+              <p className="text-[#ff0000] font-[300] md:text-[1.1rem] text-left pt-1 md:pt-[1rem] absolute tracking-wide">
                 {errors.name?.message}
               </p>
             </div>
@@ -170,9 +170,9 @@ const Contact = () => {
                   errors.email
                     ? "border-b-[#ff0000] focus:border-b-[#ff0000]"
                     : "border-b-[#00000045] focus:border-b-black"
-                } w-full rounded-none appearance-none outline-none pb-[0.6rem] font-sofia-regular text-[1.7rem] placeholder:opacity-50 md:text-[2.5rem] md:font-sofia relative`}
+                } w-full rounded-none appearance-none outline-none pb-[0.6rem] font-[400] text-[1.7rem] placeholder:opacity-50 md:text-[2.5rem] md:font-[300] relative`}
               />
-              <p className="text-[#ff0000] font-sofia md:text-[1.1rem] text-left pt-1 md:pt-[1rem] absolute tracking-wide">
+              <p className="text-[#ff0000] font-[300] md:text-[1.1rem] text-left pt-1 md:pt-[1rem] absolute tracking-wide">
                 {errors.email?.message}
               </p>
             </div>
@@ -189,9 +189,9 @@ const Contact = () => {
                   errors.message
                     ? "border-b-[#ff0000] focus:border-b-[#ff0000]"
                     : "border-b-[#00000045] focus:border-b-black"
-                } w-full rounded-none appearance-none outline-none pb-[0.6rem] font-sofia-regular text-[1.7rem] placeholder:opacity-50 md:text-[2.5rem] md:font-sofia relative`}
+                } w-full rounded-none appearance-none outline-none pb-[0.6rem] font-[400] text-[1.7rem] placeholder:opacity-50 md:text-[2.5rem] md:font-[300] relative`}
               />
-              <p className="text-[#ff0000] font-sofia md:text-[1.1rem] text-left pt-1 md:pt-[1rem] absolute tracking-wide">
+              <p className="text-[#ff0000] font-[300] md:text-[1.1rem] text-left pt-1 md:pt-[1rem] absolute tracking-wide">
                 {errors.message?.message}
               </p>
             </div>
@@ -205,7 +205,7 @@ const Contact = () => {
           <Reveal y={100} width="100%">
             <button
               disabled={isSending}
-              className={`font-sofia-regular text-[1.5rem] border-b-2 w-fit border-black md:border-[#00000045] ${
+              className={`font-[400] text-[1.5rem] border-b-2 w-fit border-black md:border-[#00000045] ${
                 isSending && "text-[#00000045]"
               } mt-[1rem] md:text-[1.7rem] relative group`}
             >

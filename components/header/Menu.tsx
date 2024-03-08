@@ -15,31 +15,31 @@ const Menu = ({
     <>
       <MenuReveal isOpen={isOpen}>
         <div className="fixed bg-white z-[30] w-screen md:w-[689px] md:right-0 h-screen overflow-scroll">
-          <p className="font-sofia-bold text-[1.5rem] mt-[1.5rem] md:hidden">
+          <p className="font-bold text-[1.5rem] mt-[1.5rem] md:hidden">
             Felsunny
           </p>
           <div className="flex mt-[8rem] md:mt-[9rem] md:justify-center md:gap-[8rem]">
             <div className="hidden md:flex md:flex-col gap-[3rem]">
-              <p className="font-sofia-extralight opacity-50 uppercase tracking-widest">
+              <p className="font-[200] opacity-50 uppercase tracking-widest">
                 Social
               </p>
               <Socials />
             </div>
             <div className="flex flex-col gap-[1rem] pl-[1rem] md:pl-0">
-              <p className="font-sofia-extralight opacity-50 text-[1.2rem] md:text-base uppercase tracking-widest">
+              <p className="font-[200] opacity-50 text-[1.2rem] md:text-base uppercase tracking-widest">
                 Menu
               </p>
               <Nav setIsOpen={setIsOpen} />
             </div>
           </div>
           <div className="pt-[3rem] md:pt-[2rem] pl-[1.5rem] md:pl-[3rem]">
-            <p className="font-sofia-extralight opacity-50 uppercase tracking-wider md:text-[0.9rem]">
+            <p className="font-[200] opacity-50 uppercase tracking-wider md:text-[0.9rem]">
               Get In Touch
             </p>
             <div className="relative w-fit group">
               <Link
                 href={"mailto:felixsunday@yahoo.com"}
-                className=" font-sofia-extralight"
+                className=" font-[200]"
               >
                 felixsunday@yahoo.com
                 <div

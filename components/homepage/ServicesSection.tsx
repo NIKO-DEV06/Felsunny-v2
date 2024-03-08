@@ -43,7 +43,7 @@ const ServicesSection = () => {
         </h1>
       </Reveal>
       <Reveal y={80}>
-        <p className="font-sofia px-[1.5rem] md:px-[3rem] xl:px-[6rem] mt-[1.5rem]">
+        <p className="font-[300] px-[1.5rem] md:px-[3rem] xl:px-[6rem] mt-[1.5rem]">
           We provide a wide range of business solutions
         </p>
       </Reveal>
@@ -58,7 +58,7 @@ const ServicesSection = () => {
                   : "border-b-[1px]"
               } border-[#ffffff46] bgblue-500 px-[1.5rem] md:px-[4rem] xl:px-[6rem] py-[1.8rem] md:text-[1.4rem] relative group`}
             >
-              <p className="uppercase font-sofia">{service.name}</p>
+              <p className="uppercase font-[300]">{service.name}</p>
               <Image
                 src={arrow}
                 alt="arrow"
@@ -73,7 +73,7 @@ const ServicesSection = () => {
                       key={index}
                       className="mr-[3rem] flex gap-[3rem] opacity-0 group-hover:opacity-100 duration-300"
                     >
-                      <p className="font-sofia">{service.name}</p>
+                      <p className="font-[400]">{service.name}</p>
                       <Image src={arrow} alt="arrow" width={40} height={40} />
                     </div>
                   ))}

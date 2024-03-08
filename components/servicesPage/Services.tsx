@@ -70,7 +70,7 @@ const Services = () => {
           </h1>
         </Reveal>
         <Reveal y={100} z="z-[10]">
-          <p className="font-sofia px-[2rem] md:mx-auto text-center md:w-[70%] md:text-[1.15rem] mt-[2rem] ">
+          <p className="font-[300] px-[2rem] md:mx-auto text-center md:w-[70%] md:text-[1.15rem] mt-[2rem] ">
             Discover our wide range of business solutions, including sales and
             distribution, government supplies, construction, consultancy
             services, and property sales.
@@ -117,9 +117,9 @@ const Services = () => {
                 </h1>
               </Reveal>
               <Reveal y={100}>
-                <p className="font-sofia text-[1.1rem]">{service.desc}</p>
+                <p className="font-[300] text-[1.1rem]">{service.desc}</p>
               </Reveal>
-              <div className="absolute font-sofia-bold text-[25rem] opacity-[50%] text-transparent stroke-neon top-[-50%] md:top-[-70%] right-0 blur-[1px]">
+              <div className="absolute font-bold text-[25rem] opacity-[50%] text-transparent stroke-neon top-[-50%] md:top-[-70%] right-0 blur-[1px]">
                 <ImageReveal>
                   <p>{index + 1}</p>
                 </ImageReveal>

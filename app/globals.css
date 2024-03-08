@@ -39,36 +39,6 @@
     format("opentype");
 }
 
-@font-face {
-  font-family: "Sofia";
-  src: url("/fonts/sofiapro/sofiapro-light.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Sofia-Extralight";
-  src: url("/fonts/sofiapro/SofiaProExtraLight.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Sofia-Regular";
-  src: url("/fonts/sofiapro/SofiaProRegular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Sofia-Medium";
-  src: url("/fonts/sofiapro/SofiaProMedium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Sofia-Bold";
-  src: url("/fonts/sofiapro/SofiaProBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Sofia-Semibold";
-  src: url("/fonts/sofiapro/SofiaProSemiBold.ttf") format("truetype");
-}
-
 .stroke {
   -webkit-text-stroke: 1px white;
 }

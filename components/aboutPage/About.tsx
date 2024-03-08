@@ -37,12 +37,12 @@ const About = () => {
             <div className="flex flex-col gap-[4rem] md:w-[50%]">
               <div className="flex flex-col gap-[1rem]">
                 <Reveal y={80}>
-                  <p className="uppercase font-sofia tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[30rem] underline">
+                  <p className="uppercase font-[300] tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[30rem] underline">
                     Our History
                   </p>
                 </Reveal>
                 <Reveal y={250}>
-                  <p className="font-sofia-regular text-[1.1rem] md:text-[1.2rem] md:font-sofia">
+                  <p className="font-[400] text-[1.1rem] md:text-[1.2rem] md:font-[300]">
                     Founded in 2010 by Felix Sunday Ayeniko in Nigeria, Felsunny
                     Technology has grown from a vision into a powerhouse in the
                     business solutions industry. We are dedicated to empowering
@@ -70,13 +70,13 @@ const About = () => {
             <div className="flex flex-col gap-[4rem] md:w-[50%]">
               <div className="flex flex-col gap-[1rem]">
                 <Reveal y={80}>
-                  <p className="uppercase font-sofia tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[30rem] underline">
+                  <p className="uppercase font-[300] tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[30rem] underline">
                     Inspiration
                   </p>
                 </Reveal>
 
                 <Reveal y={250}>
-                  <p className="font-sofia-regular text-[1.1rem] md:text-[1.2rem] md:font-sofia">
+                  <p className="font-[400] text-[1.1rem] md:text-[1.2rem] md:font-[300]">
                     From the outset, our founder, Felix Sunday Ayeniko,
                     envisioned a company that would bridge the gap between
                     businesses and success. With a deep understanding of the
@@ -104,12 +104,12 @@ const About = () => {
             <div className="flex flex-col gap-[4rem] md:w-[50%]">
               <div className="flex flex-col gap-[1rem]">
                 <Reveal y={80}>
-                  <p className="uppercase font-sofia tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[30rem] underline">
+                  <p className="uppercase font-[300] tracking-widest text-[1.1rem] md:text-[0.8rem] md:w-[30rem] underline">
                     Our Values
                   </p>
                 </Reveal>
                 <Reveal y={250}>
-                  <p className="font-sofia-regular text-[1.1rem] md:text-[1.2rem] md:font-sofia">
+                  <p className="font-[400] text-[1.1rem] md:text-[1.2rem] md:font-[300]">
                     At Felsunny, we put our clients at the heart of everything
                     we do. By taking the time to understand your unique needs,
                     we ensure our solutions align perfectly with your goals. Our

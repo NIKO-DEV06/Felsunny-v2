@@ -33,7 +33,7 @@ const Footer = () => {
               <div className="relative w-fit group">
                 <Link
                   href={"mailto:felixsunday@yahoo.com"}
-                  className="font-sofia-regular text-[1.5rem]"
+                  className=" text-[1.5rem]"
                 >
                   felixsunday@yahoo.com
                   <div
@@ -47,20 +47,19 @@ const Footer = () => {
             </Reveal>
             <div className="text-center lg:text-left lg:opacity-50">
               <Reveal y={80} width="100%">
-                <p className="font-sofia-extralight mx-auto">
-                  <span className="font-sofia-regular">Phone:</span> +234 8035
-                  6168 05
+                <p className="font-extralight mx-auto">
+                  <span className="">Phone:</span> +234 8035 6168 05
                 </p>
               </Reveal>
               <Reveal y={80}>
-                <p className="font-sofia-extralight w-[65%] mx-auto lg:mx-0">
+                <p className="font-extralight w-[65%] mx-auto lg:mx-0">
                   2 Ahmadu Bello Way, Challenge 240101 Ilorin, Kwara State /
                   Gwarinpa Abuja, FCT
                 </p>
               </Reveal>
             </div>
             <Reveal y={80} width="100%">
-              <p className="w-[65%] font-sofia-regular lg:font-sofia text-center lg:text-left mx-auto lg:mx-0">
+              <p className="w-[65%] lg:font-[300] text-center lg:text-left mx-auto lg:mx-0">
                 © 2023 Felsunny Technology LTD. All Rights Reserved
               </p>
             </Reveal>
@@ -123,7 +122,7 @@ const Footer = () => {
           <div className="hidden lg:flex flex-col justify-center items-center gap-[1.5rem] mt-[2rem] text-[1.5rem]">
             <div className="flex justify-between gap-[3rem] translate-x-[-1.6rem]">
               <Reveal y={80}>
-                <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-sofia-extralight hover:font-sofia duration-300">
+                <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-extralight hover:font-[300] duration-300">
                   <Link
                     href={"https://www.linkedin.com/in/ayeniko-felix-0a0a4337/"}
                     className="flex flex-col gap-[rem]"
@@ -138,7 +137,7 @@ const Footer = () => {
                 </div>
               </Reveal>
               <Reveal y={80}>
-                <div className="relative w-fit group h-[2rem] overflow-hidden font-sofia-extralight hover:font-sofia duration-300 translate-x[0.7rem] pl-[0.7rem]">
+                <div className="relative w-fit group h-[2rem] overflow-hidden font-extralight hover:font-[300] duration-300 translate-x[0.7rem] pl-[0.7rem]">
                   <Link
                     href={"https://mobile.twitter.com/felsunny"}
                     className=" flex flex-col gap-[rem]"
@@ -155,7 +154,7 @@ const Footer = () => {
             </div>
             <div className="flex justify-between gap-[3rem]">
               <Reveal y={80}>
-                <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-sofia-extralight hover:font-sofia duration-300">
+                <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-extralight hover:font-[300] duration-300">
                   <Link
                     href={"https://www.facebook.com/felsunny/"}
                     className=" flex flex-col gap-[rem]"
@@ -170,7 +169,7 @@ const Footer = () => {
                 </div>
               </Reveal>
               <Reveal y={80}>
-                <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-sofia-extralight hover:font-sofia duration-300">
+                <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-extralight hover:font-[300] duration-300">
                   <Link
                     href={"https://www.instagram.com/felsunnytechnology/?hl=en"}
                     className=" flex flex-col gap-[rem]"

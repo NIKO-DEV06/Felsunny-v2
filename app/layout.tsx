@@ -1,11 +1,14 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 // import AnimatedCursor from "react-animated-cursor";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Nunito_Sans({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Felsunny Technology",
@@ -28,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg[#F4EBD9] bg[#e0fd60] bg-[#292929] overflow-x-hidden`}
+        className={`${poppins.className} bg[#F4EBD9] bg[#e0fd60] bg-[#292929] overflow-x-hidden`}
       >
         <main>
           <Header />

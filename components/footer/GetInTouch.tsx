@@ -18,7 +18,7 @@ const GetInTouch = () => {
             onClick={() => {
               router.push("/contact");
             }}
-            className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] md:hover:tracking-wider duration-300 z-[10] cursor-pointer rounded-full font-sofia-medium font-bold border-black border-2 mb-[2rem]"
+            className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] md:hover:tracking-wider duration-300 z-[10] cursor-pointer rounded-full font-bold border-black border-2 mb-[2rem]"
           >
             Get in touch
           </button>
@@ -38,10 +38,10 @@ const GetInTouch = () => {
                 <p className="font-integral">Nigeria</p>
               </Reveal>
               <Reveal y={50}>
-                <p className="font-sofia">Gwarinpa</p>
+                <p className="font-[300]">Gwarinpa</p>
               </Reveal>
               <Reveal y={50}>
-                <p className="font-sofia"> Abuja, FCT</p>
+                <p className="font-[300]"> Abuja, FCT</p>
               </Reveal>
             </div>
             <div className="flex flex-col gap-[0.1rem]">
@@ -49,12 +49,23 @@ const GetInTouch = () => {
                 <p className="font-integral">Nigeria</p>
               </Reveal>
               <Reveal y={50}>
-                <p className="font-sofia">
+                <p className="font-[300]">
                   2 Ahmadu Bello Way, Challenge 240101
                 </p>
               </Reveal>
               <Reveal y={50}>
-                <p className="font-sofia">Ilorin, Kwara State</p>
+                <p className="font-[300]">Ilorin, Kwara State</p>
+              </Reveal>
+            </div>
+            <div className="flex flex-col gap-[0.1rem]">
+              <Reveal y={50}>
+                <p className="font-integral">United Kingdom</p>
+              </Reveal>
+              <Reveal y={50}>
+                <p className="font-[300]">West Midlands</p>
+              </Reveal>
+              <Reveal y={50}>
+                <p className="font-[300]">Wolverhampton</p>
               </Reveal>
             </div>
           </div>
