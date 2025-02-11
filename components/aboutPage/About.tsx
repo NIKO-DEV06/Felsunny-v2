@@ -1,16 +1,16 @@
-import Image from "next/image";
-import UnfixedHeader from "../header/UnfixedHeader";
-import { Reveal } from "../utils/Reveal";
-import history from "@/assets/history.svg";
-import inspiration from "@/assets/inspiration.svg";
-import value from "@/assets/value.svg";
-import ceo from "@/assets/ceo3.png";
+import Image from 'next/image';
+import UnfixedHeader from '../header/UnfixedHeader';
+import { Reveal } from '../utils/Reveal';
+import history from '@/assets/history.svg';
+import inspiration from '@/assets/inspiration.svg';
+import value from '@/assets/value.svg';
+import ceo from '@/assets/ceo3.png';
 
-import { ImageReveal } from "../utils/ImageReveal";
+import { ImageReveal } from '../utils/ImageReveal';
 
 const About = () => {
   return (
-    <section className="min-h-screen bg-[#121212] text-white pb-[5rem] overflow-x-hidden">
+    <section className="min-h-screen bg-black text-white pb-[5rem] overflow-x-hidden">
       <UnfixedHeader invert="invert" color="text-[#e0fd60]" />
       <div className="mt-[6rem] md:mt-[3rem]">
         <Reveal y={200} width="100%">

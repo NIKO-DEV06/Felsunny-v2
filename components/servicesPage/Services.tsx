@@ -1,66 +1,66 @@
-import React from "react";
-import UnfixedHeader from "../header/UnfixedHeader";
-import { Reveal } from "../utils/Reveal";
-import { ImageReveal } from "../utils/ImageReveal";
-import Image from "next/image";
-import setting from "../../assets/setting-dynamic-premium.png";
-import sun from "../../assets/sun-dynamic-premium.png";
-import hash from "../../assets/hash-dynamic-premium.png";
-import chart from "../../assets/chart-dynamic-premium.png";
-import flag from "../../assets/flag-dynamic-premium.png";
-import computer from "../../assets/computer-dynamic-premium.png";
-import tool from "../../assets/tool-dynamic-premium.png";
-import key from "../../assets/key-dynamic-premium.png";
-import phone from "../../assets/phone-incoming-dynamic-premium.png";
-import sales from "../../assets/sales.svg";
-import gov from "../../assets/gov.svg";
-import property from "../../assets/property.svg";
-import devices from "../../assets/devices.svg";
-import construction from "../../assets/construction.svg";
-import consult from "../../assets/consult.svg";
+import React from 'react';
+import UnfixedHeader from '../header/UnfixedHeader';
+import { Reveal } from '../utils/Reveal';
+import { ImageReveal } from '../utils/ImageReveal';
+import Image from 'next/image';
+import setting from '../../assets/setting-dynamic-premium.png';
+import sun from '../../assets/sun-dynamic-premium.png';
+import hash from '../../assets/hash-dynamic-premium.png';
+import chart from '../../assets/chart-dynamic-premium.png';
+import flag from '../../assets/flag-dynamic-premium.png';
+import computer from '../../assets/computer-dynamic-premium.png';
+import tool from '../../assets/tool-dynamic-premium.png';
+import key from '../../assets/key-dynamic-premium.png';
+import phone from '../../assets/phone-incoming-dynamic-premium.png';
+import sales from '../../assets/sales.svg';
+import gov from '../../assets/gov.svg';
+import property from '../../assets/property.svg';
+import devices from '../../assets/devices.svg';
+import construction from '../../assets/construction.svg';
+import consult from '../../assets/consult.svg';
 
 const Services = () => {
   const services = [
     {
-      name: "Sales and Distribution",
-      desc: "Discover our wide range of business solutions, including sales and distribution, government supplies, construction, consultancy services, and property sales.",
+      name: 'Sales and Distribution',
+      desc: 'Discover our wide range of business solutions, including sales and distribution, government supplies, construction, consultancy services, and property sales.',
       img: chart,
       svg: sales,
     },
     {
-      name: "Government Supplies",
-      desc: "Simplify government procurements with our specialized supply services. We ensure seamless sourcing and delivery of supplies to meet government requirements.",
+      name: 'Government Supplies',
+      desc: 'Simplify government procurements with our specialized supply services. We ensure seamless sourcing and delivery of supplies to meet government requirements.',
       img: flag,
       svg: gov,
     },
     {
-      name: "Property Sales",
-      desc: "Explore lucrative property sales and investment opportunities with us. Our expert guidance helps you make informed decisions in the real estate market.",
+      name: 'Property Sales',
+      desc: 'Explore lucrative property sales and investment opportunities with us. Our expert guidance helps you make informed decisions in the real estate market.',
       img: key,
       svg: property,
     },
     {
-      name: "Gadgets and Devices",
-      desc: "From smart home solutions to wearable tech, we offer products designed to enhance your lifestyle and elevate your productivity. Explore our collection for the ultimate blend of functionality and style.",
+      name: 'Gadgets and Devices',
+      desc: 'From smart home solutions to wearable tech, we offer products designed to enhance your lifestyle and elevate your productivity. Explore our collection for the ultimate blend of functionality and style.',
       img: computer,
       svg: devices,
     },
     {
-      name: "Construction",
-      desc: "From planning to execution, our construction services ensure top-quality projects with a focus on efficiency and innovation. Partner with us for successful outcomes.",
+      name: 'Construction',
+      desc: 'From planning to execution, our construction services ensure top-quality projects with a focus on efficiency and innovation. Partner with us for successful outcomes.',
       img: tool,
       svg: construction,
     },
     {
-      name: "Consultancy Services",
-      desc: "Gain valuable insights and strategic advice with our consultancy services. Our experienced team provides data-driven solutions tailored to your business goals.",
+      name: 'Consultancy Services',
+      desc: 'Gain valuable insights and strategic advice with our consultancy services. Our experienced team provides data-driven solutions tailored to your business goals.',
       img: phone,
       svg: consult,
     },
   ];
 
   return (
-    <section className="bg-[#121212] min-h-screen text-white">
+    <section className="bg-black min-h-screen text-white">
       <UnfixedHeader invert="invert" color="text-[#e0fd60]" />
       <div className="h-[70vh] flex flex-col items-center justify-center">
         <Reveal y={200} width="100%" z="z-10">
@@ -102,7 +102,7 @@ const Services = () => {
           <div
             key={index}
             className={`flex flex-col ${
-              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
             } gap-[1rem] md:gap-[2rem] items-center md:justify-center`}
           >
             <div className="relative md:w-[50%]">

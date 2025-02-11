@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import { useEffect } from "react";
-import Image from "next/image";
-import folder from "../../assets/folder-dynamic-premium.png";
-import computer from "../../assets/computer-dynamic-premium.png";
-import bookmark from "../../assets/bookmark-fav-dynamic-premium.png";
+import { useEffect } from 'react';
+import Image from 'next/image';
+import folder from '../../assets/folder-dynamic-premium.png';
+import computer from '../../assets/computer-dynamic-premium.png';
+import bookmark from '../../assets/bookmark-fav-dynamic-premium.png';
 
-import UnfixedHeader from "../header/UnfixedHeader";
+import UnfixedHeader from '../header/UnfixedHeader';
 
-import { useRouter } from "next/navigation";
-import { Reveal } from "../utils/Reveal";
-import { ImageReveal } from "../utils/ImageReveal";
+import { useRouter } from 'next/navigation';
+import { Reveal } from '../utils/Reveal';
+import { ImageReveal } from '../utils/ImageReveal';
 
 const Hero = () => {
   const router = useRouter();
@@ -26,7 +26,7 @@ const Hero = () => {
       const tiltX = (moveX * tiltMax).toFixed(2);
       const tiltY = (moveY * tiltMax).toFixed(2);
 
-      const parallaxElements = document.querySelectorAll(".parallax-element");
+      const parallaxElements = document.querySelectorAll('.parallax-element');
 
       parallaxElements.forEach((element) => {
         const elementWithStyle = element as HTMLElement;
@@ -34,10 +34,10 @@ const Hero = () => {
       });
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
   return (
@@ -46,7 +46,7 @@ const Hero = () => {
       <div className="flex flex-col justify-center items-center gap-[1.5rem] md:gap-[2.5rem] mt-[12.5rem] md:mt-[7rem] xl:scale-[1.1]">
         <Reveal y={200}>
           <h1 className="text-center font-integral-heavy text-[1.7rem] md:text-[4rem] lg:text-[4.5rem] xl:text-[5rem] px-[1.5rem] md:px-[2.5rem] leading-[1.8rem] md:leading-[5rem] z-[10]">
-            Your Partner in <br /> Business{" "}
+            Your Partner in <br /> Business{' '}
             <span className="text-transparent stroke-neon inline-block overflow-hidden h-[1.75rem] md:h-[4.55rem] lg:h-[4.8rem] xl:h-[5rem] group">
               <p className="md:group-hover:translate-y-[-5.5rem] transform duration-300 ease-in-out md:group-hover:scale-[0.6]">
                 Excellence
@@ -59,7 +59,7 @@ const Hero = () => {
         </Reveal>
 
         <Reveal y={100} z="z-[10]">
-          <p className="px-[2rem] font-[300] md:mx-auto text-center md:w-[70%] md:text-[1.15rem] ">
+          <p className="px-[2rem] font-extralight md:mx-auto text-center md:w-[70%] md:text-[1.15rem] ">
             We provide business solutions, including sales and distribution,
             government supplies, construction, consultancy services, and
             property sales.
@@ -67,11 +67,13 @@ const Hero = () => {
         </Reveal>
         <Reveal y={150} z="z-[10]">
           <button
-            onClick={() => router.push("/about")}
+            onClick={() => router.push('/about')}
             //   href={"/about"}
-            className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] hover:tracking-widest duration-300 cursor-pointer rounded-full border-2 border-white "
+            className="border-[#e0fd60] hover:bg-[#e0fd60] px-[1.5rem] py-[.5rem] md:py-[.7rem] duration-300 cursor-pointer rounded-lg border text-white hover:text-black"
           >
-            <p className="font-bold text-black md:text-[1.05rem]">Learn More</p>
+            <p className="fontbold uppercase text-sm tracking-widest">
+              Learn More
+            </p>
           </button>
         </Reveal>
       </div>

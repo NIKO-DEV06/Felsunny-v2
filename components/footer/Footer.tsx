@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import logo from "@/assets/logo.svg";
-import linkedin from "@/assets/linkedin.svg";
-import facebook from "@/assets/facebook.svg";
-import instagram from "@/assets/instagram.svg";
-import twitter from "@/assets/twitter.svg";
-import { ImageReveal } from "../utils/ImageReveal";
-import { Reveal } from "../utils/Reveal";
+import Image from 'next/image';
+import Link from 'next/link';
+import logo from '@/assets/logo.svg';
+import linkedin from '@/assets/linkedin.svg';
+import facebook from '@/assets/facebook.svg';
+import instagram from '@/assets/instagram.svg';
+import twitter from '@/assets/twitter.svg';
+import { ImageReveal } from '../utils/ImageReveal';
+import { Reveal } from '../utils/Reveal';
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
         name="format-detection"
         content="telephone=no, date=no, email=no, address=no"
       />
-      <footer className="bg-[#121212] min-h-[68vh] md:min-h-screen text-white pb-[4rem]">
+      <footer className="bg-black min-h-[68vh] md:min-h-[90vh] text-white pb-[4rem]">
         <ImageReveal>
           <Image
             src={logo}
@@ -32,7 +32,7 @@ const Footer = () => {
             <Reveal y={80}>
               <div className="relative w-fit group">
                 <Link
-                  href={"mailto:felixsunday@yahoo.com"}
+                  href={'mailto:felixsunday@yahoo.com'}
                   className=" text-[1.5rem]"
                 >
                   felixsunday@yahoo.com
@@ -60,14 +60,15 @@ const Footer = () => {
             </div>
             <Reveal y={80} width="100%">
               <p className="w-[65%] lg:font-[300] text-center lg:text-left mx-auto lg:mx-0">
-                © 2023 Felsunny Technology LTD. All Rights Reserved
+                © {new Date().getFullYear()} Felsunny Technology LTD. All Rights
+                Reserved
               </p>
             </Reveal>
           </div>
           <div className="flex flex-col justify-center items-center gap-[1.5rem] mt-[2rem] lg:hidden">
             <div className="flex justify-between gap-[3rem] ">
               <Link
-                href={"https://www.linkedin.com/in/ayeniko-felix-0a0a4337/"}
+                href={'https://www.linkedin.com/in/ayeniko-felix-0a0a4337/'}
               >
                 <ImageReveal>
                   <Image
@@ -79,7 +80,7 @@ const Footer = () => {
                   />
                 </ImageReveal>
               </Link>
-              <Link href={"https://mobile.twitter.com/felsunny"}>
+              <Link href={'https://mobile.twitter.com/felsunny'}>
                 <ImageReveal>
                   <Image
                     src={twitter}
@@ -92,7 +93,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="flex justify-between gap-[3rem]">
-              <Link href={"https://www.facebook.com/felsunny/"}>
+              <Link href={'https://www.facebook.com/felsunny/'}>
                 <ImageReveal>
                   <Image
                     src={facebook}
@@ -104,7 +105,7 @@ const Footer = () => {
                 </ImageReveal>
               </Link>
               <Link
-                href={"https://www.instagram.com/felsunnytechnology/?hl=en"}
+                href={'https://www.instagram.com/felsunnytechnology/?hl=en'}
               >
                 <ImageReveal>
                   <Image
@@ -124,7 +125,7 @@ const Footer = () => {
               <Reveal y={80}>
                 <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-extralight hover:font-[300] duration-300">
                   <Link
-                    href={"https://www.linkedin.com/in/ayeniko-felix-0a0a4337/"}
+                    href={'https://www.linkedin.com/in/ayeniko-felix-0a0a4337/'}
                     className="flex flex-col gap-[rem]"
                   >
                     <p className="md:group-hover:translate-y-[-1.7rem] duration-[450ms] transform ease-in-out">
@@ -139,7 +140,7 @@ const Footer = () => {
               <Reveal y={80}>
                 <div className="relative w-fit group h-[2rem] overflow-hidden font-extralight hover:font-[300] duration-300 translate-x[0.7rem] pl-[0.7rem]">
                   <Link
-                    href={"https://mobile.twitter.com/felsunny"}
+                    href={'https://mobile.twitter.com/felsunny'}
                     className=" flex flex-col gap-[rem]"
                   >
                     <p className="md:group-hover:translate-y-[-1.7rem] duration-[450ms] transform ease-in-out">
@@ -156,7 +157,7 @@ const Footer = () => {
               <Reveal y={80}>
                 <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-extralight hover:font-[300] duration-300">
                   <Link
-                    href={"https://www.facebook.com/felsunny/"}
+                    href={'https://www.facebook.com/felsunny/'}
                     className=" flex flex-col gap-[rem]"
                   >
                     <p className=" md:group-hover:translate-y-[-1.7rem] duration-[450ms] transform ease-in-out">
@@ -171,7 +172,7 @@ const Footer = () => {
               <Reveal y={80}>
                 <div className="relative w-fit group h-[2rem] overflow-hidden bgred-700 font-extralight hover:font-[300] duration-300">
                   <Link
-                    href={"https://www.instagram.com/felsunnytechnology/?hl=en"}
+                    href={'https://www.instagram.com/felsunnytechnology/?hl=en'}
                     className=" flex flex-col gap-[rem]"
                   >
                     <p className=" md:group-hover:translate-y-[-1.7rem] duration-[450ms] transform ease-in-out">

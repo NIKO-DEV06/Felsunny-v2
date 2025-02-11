@@ -1,16 +1,16 @@
-import Image from "next/image";
-import spin from "@/assets/spin.svg";
-import { Reveal } from "../utils/Reveal";
-import { ImageReveal } from "../utils/ImageReveal";
+import Image from 'next/image';
+import spin from '@/assets/spin.svg';
+import { Reveal } from '../utils/Reveal';
+import { ImageReveal } from '../utils/ImageReveal';
 
 const AboutSection = () => {
   return (
-    <section className="bg-[#121212] text-white min-h-screen pb-[8rem] pt-[2rem]">
+    <section className="text-white min-h-screen pb-[8rem] pt-[2rem]">
       <div className="mt-[3rem] ">
         <Reveal y={200}>
           <h1 className="font-integral-bold text-[3rem] md:text-[5rem] lg:text-[7.5rem] xl:text-[9rem] px-[2rem] md:px-[4rem] xl:px-[5rem] leading-[3rem] md:leading-[5rem] lg:leading-[7rem] xl:leading-[8.5rem]">
             Felsunny <br />
-            Technology{" "}
+            Technology{' '}
             <span className="font-serif font-bold hidden md:inline-block custom-pulse">
               _
             </span>
@@ -72,12 +72,12 @@ const AboutSection = () => {
               </p>
               <div className="flex flex-wrap gap-[0.5rem]">
                 {[
-                  "Commerce",
-                  "Procurement",
-                  "Realty",
-                  "Construction & Interior",
-                  "Gadgets & Devices",
-                  "Consultancy",
+                  'Commerce',
+                  'Procurement',
+                  'Realty',
+                  'Construction & Interior',
+                  'Gadgets & Devices',
+                  'Consultancy',
                 ].map((service, i) => (
                   <p
                     key={i}

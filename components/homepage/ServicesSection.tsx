@@ -1,42 +1,42 @@
-import Image from "next/image";
-import arrow from "@/assets/arrow.svg";
-import Marquee from "react-fast-marquee";
-import Link from "next/link";
-import { Reveal } from "../utils/Reveal";
-import { ImageReveal } from "../utils/ImageReveal";
+import Image from 'next/image';
+import arrow from '@/assets/arrow.svg';
+import Marquee from 'react-fast-marquee';
+import Link from 'next/link';
+import { Reveal } from '../utils/Reveal';
+import { ImageReveal } from '../utils/ImageReveal';
 
 const ServicesSection = () => {
   const services = [
     {
-      name: "Sales & Distribution",
-      url: "",
+      name: 'Sales & Distribution',
+      url: '',
     },
     {
-      name: "Government Supplies",
-      url: "",
+      name: 'Government Supplies',
+      url: '',
     },
     {
-      name: "Property Sales",
-      url: "",
+      name: 'Property Sales',
+      url: '',
     },
     {
-      name: "Construction & Interior",
-      url: "",
+      name: 'Construction & Interior',
+      url: '',
     },
     {
-      name: "Gadgets & Devices",
-      url: "",
+      name: 'Gadgets & Devices',
+      url: '',
     },
     {
-      name: "Consultancy",
-      url: "",
+      name: 'Consultancy',
+      url: '',
     },
   ];
   return (
-    <section className="min-h-screen bg-[#121212] text-white pb-[7rem]">
+    <section className="min-h-screen text-white pb-[7rem]">
       <Reveal y={200}>
         <h1 className="font-integral-bold text-[3rem] mt-[3rem] md:text-[5rem] lg:text-[7.5rem] xl:text-[9rem] px-[1.5rem] md:px-[3rem] xl:px-[6rem] leading-[3rem] md:leading-[5rem] lg:leading-[7rem] xl:leading-[8.5rem]">
-          What we do{" "}
+          What we do{' '}
           <span className="font-serif font-bold hidden md:inline-block custom-pulse">
             _
           </span>
@@ -48,14 +48,14 @@ const ServicesSection = () => {
         </p>
       </Reveal>
       <div className="mt-[2rem]">
-        {services.map((service) => (
-          <ImageReveal>
+        {services.map((service, i) => (
+          <ImageReveal key={i}>
             <Link
               href={service.url}
               className={`flex justify-between items-center ${
-                service.name.toLowerCase() === "sales & distribution"
-                  ? " border-y-[1px]"
-                  : "border-b-[1px]"
+                service.name.toLowerCase() === 'sales & distribution'
+                  ? ' border-y-[1px]'
+                  : 'border-b-[1px]'
               } border-[#ffffff46] bgblue-500 px-[1.5rem] md:px-[4rem] xl:px-[6rem] py-[1.8rem] md:text-[1.4rem] relative group`}
             >
               <p className="uppercase font-[300]">{service.name}</p>
