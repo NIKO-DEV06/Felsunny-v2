@@ -20,15 +20,19 @@ const ServicesSection = () => {
       url: '',
     },
     {
-      name: 'Construction & Interior',
+      name: 'Commodity Export',
       url: '',
     },
     {
-      name: 'Gadgets & Devices',
+      name: 'Construction Equipment',
       url: '',
     },
     {
-      name: 'Consultancy',
+      name: 'Automotives',
+      url: '',
+    },
+    {
+      name: 'IT Consultancy',
       url: '',
     },
   ];
