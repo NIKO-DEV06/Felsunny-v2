@@ -31,9 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.className} bg[#F4EBD9] bg-[#e0fd60] bg[#292929] overflow-x-hidden`}
-      >
+      <body className={`${poppins.className} bg-black overflow-x-hidden`}>
         <main>
           <Header />
           <SmoothScroll>

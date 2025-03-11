@@ -16,6 +16,10 @@ const ServicesSection = () => {
       url: '',
     },
     {
+      name: 'Automotives',
+      url: '/services/automotives',
+    },
+    {
       name: 'Property Sales',
       url: '',
     },
@@ -27,17 +31,14 @@ const ServicesSection = () => {
       name: 'Construction Equipment',
       url: '',
     },
-    {
-      name: 'Automotives',
-      url: '',
-    },
+
     {
       name: 'IT Consultancy',
       url: '',
     },
   ];
   return (
-    <section className="min-h-screen text-white pb-[7rem]">
+    <section id="services" className="min-h-screen text-white pb-[7rem]">
       <Reveal y={200}>
         <h1 className="font-integral-bold text-[3rem] mt-[3rem] md:text-[5rem] lg:text-[7.5rem] xl:text-[9rem] px-[1.5rem] md:px-[3rem] xl:px-[6rem] leading-[3rem] md:leading-[5rem] lg:leading-[7rem] xl:leading-[8.5rem]">
           What we do{' '}

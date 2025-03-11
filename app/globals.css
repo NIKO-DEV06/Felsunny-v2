@@ -1,42 +1,50 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "hamburgers/dist/hamburgers.min.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'hamburgers/dist/hamburgers.min.css';
 
 @font-face {
-  font-family: "Integral CF";
-  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-regular.otf")
-    format("opentype");
+  font-family: 'Integral CF';
+  src: url('/fonts/demofont/Fontspring-DEMO-integralcf-regular.otf')
+    format('opentype');
 }
 
 @font-face {
-  font-family: "Integral CF Bold";
-  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-bold.otf")
-    format("opentype");
+  font-family: 'Integral CF Bold';
+  src: url('/fonts/demofont/Fontspring-DEMO-integralcf-bold.otf')
+    format('opentype');
 }
 
 @font-face {
-  font-family: "Integral CF Demibold";
-  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-demibold.otf")
-    format("opentype");
+  font-family: 'Integral CF Demibold';
+  src: url('/fonts/demofont/Fontspring-DEMO-integralcf-demibold.otf')
+    format('opentype');
 }
 
 @font-face {
-  font-family: "Integral CF Extrabold";
-  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-extrabold.otf")
-    format("opentype");
+  font-family: 'Integral CF Extrabold';
+  src: url('/fonts/demofont/Fontspring-DEMO-integralcf-extrabold.otf')
+    format('opentype');
 }
 
 @font-face {
-  font-family: "Integral CF Heavy";
-  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-heavy.otf")
-    format("opentype");
+  font-family: 'Integral CF Heavy';
+  src: url('/fonts/demofont/Fontspring-DEMO-integralcf-heavy.otf')
+    format('opentype');
 }
 
 @font-face {
-  font-family: "Integral CF Medium";
-  src: url("/fonts/demofont/Fontspring-DEMO-integralcf-medium.otf")
-    format("opentype");
+  font-family: 'Integral CF Medium';
+  src: url('/fonts/demofont/Fontspring-DEMO-integralcf-medium.otf')
+    format('opentype');
+}
+
+.pxpx {
+  @apply px-4 md:px-16;
+}
+
+.mx2xl {
+  @apply 2xl:w-[1400px] 2xl:m-auto 2xl:px-0;
 }
 
 .stroke {

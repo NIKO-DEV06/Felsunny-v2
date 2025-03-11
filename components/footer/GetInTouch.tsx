@@ -1,7 +1,7 @@
-"use client";
-import { useRouter } from "next/navigation";
-import { Reveal } from "../utils/Reveal";
-import { ImageReveal } from "../utils/ImageReveal";
+'use client';
+import { useRouter } from 'next/navigation';
+import { Reveal } from '../utils/Reveal';
+import { ImageReveal } from '../utils/ImageReveal';
 
 const GetInTouch = () => {
   const router = useRouter();
@@ -16,7 +16,7 @@ const GetInTouch = () => {
         <Reveal y={50}>
           <button
             onClick={() => {
-              router.push("/contact");
+              router.push('/contact');
             }}
             className="bg-[#e0fd60] hover:bg-[#dff385] px-[1.5rem] py-[.5rem] md:py-[.7rem] md:hover:tracking-wider duration-300 z-[10] cursor-pointer rounded-full font-bold border-black border-2 mb-[2rem]"
           >

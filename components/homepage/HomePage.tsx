@@ -5,7 +5,7 @@ import GetInTouch from '../footer/GetInTouch';
 
 const HomePage = () => {
   return (
-    <main className="bg-black flex flex-col overflow-x-hidden">
+    <main className="bg-black flex flex-col overflow-x-hidden mx2xl">
       <Hero />
       <AboutSection />
       <ServicesSection />

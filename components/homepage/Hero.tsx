@@ -11,6 +11,7 @@ import UnfixedHeader from '../header/UnfixedHeader';
 import { useRouter } from 'next/navigation';
 import { Reveal } from '../utils/Reveal';
 import { ImageReveal } from '../utils/ImageReveal';
+import { smoothScrollToSection } from '../utils/util';
 
 const Hero = () => {
   const router = useRouter();
@@ -67,12 +68,12 @@ const Hero = () => {
         </Reveal>
         <Reveal y={150} z="z-[10]">
           <button
-            onClick={() => router.push('/about')}
+            onClick={(e) => smoothScrollToSection(e, 'services')}
             //   href={"/about"}
             className="border-[#e0fd60] hover:bg-[#e0fd60] px-[1.5rem] py-[.5rem] md:py-[.7rem] duration-300 cursor-pointer rounded-lg border text-white hover:text-black"
           >
             <p className="fontbold uppercase text-sm tracking-widest">
-              Learn More
+              VIEW SERVICES
             </p>
           </button>
         </Reveal>

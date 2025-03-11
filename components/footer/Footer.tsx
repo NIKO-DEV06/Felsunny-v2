@@ -17,7 +17,7 @@ const Footer = () => {
         name="format-detection"
         content="telephone=no, date=no, email=no, address=no"
       />
-      <footer className="bg-black min-h-[68vh] md:min-h-[90vh] text-white pb-[4rem]">
+      <footer className="bg-black min-h-[68vh] md:min-h-[90vh] text-white pb-[4rem] mx2xl">
         <ImageReveal>
           <Image
             src={logo}
