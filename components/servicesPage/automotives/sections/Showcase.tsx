@@ -20,6 +20,17 @@ import img24 from '@/assets/auto-images/img24.jpg';
 import img25 from '@/assets/auto-images/img25.jpg';
 import img26 from '@/assets/auto-images/img26.jpg';
 import img28 from '@/assets/auto-images/img28.jpg';
+import con1 from '@/assets/auto-images/con1.jpg';
+import con2 from '@/assets/auto-images/con2.jpg';
+import con3 from '@/assets/auto-images/con3.jpg';
+import con4 from '@/assets/auto-images/con4.jpg';
+import con5 from '@/assets/auto-images/con5.jpg';
+import con6 from '@/assets/auto-images/con6.jpg';
+import con7 from '@/assets/auto-images/con7.jpg';
+import con8 from '@/assets/auto-images/con8.jpg';
+import con9 from '@/assets/auto-images/con9.jpg';
+import con10 from '@/assets/auto-images/con10.jpg';
+import con11 from '@/assets/auto-images/con11.jpg';
 
 import { shimmer, toBase64 } from '@/components/utils/util';
 
@@ -40,6 +51,19 @@ const Showcase = () => {
     img19,
   ];
   const showcase3 = [img22, img23, img24, img25, img26, img28];
+  const showcase4 = [
+    con1,
+    con2,
+    con3,
+    con4,
+    con5,
+    con6,
+    con7,
+    con8,
+    con9,
+    con10,
+    con11,
+  ];
 
   return (
     <section className="mt-20 lg:mt-32">
@@ -92,6 +116,27 @@ const Showcase = () => {
       <div className="mt-5">
         <Marquee autoFill>
           {showcase3.map((showcase, i) => (
+            <div
+              key={i}
+              className="overflow-hidden w-[200px] lg:w-[500px] h-[100px] lg:h-[300px] mr-5"
+            >
+              <Image
+                src={showcase}
+                width={700}
+                height={700}
+                className="object-cover"
+                placeholder={`data:image/svg+xml;base64,${toBase64(
+                  shimmer(1200, 1800),
+                )}`}
+                alt=""
+              />
+            </div>
+          ))}
+        </Marquee>
+      </div>
+      <div className="mt-5">
+        <Marquee autoFill direction="right">
+          {showcase4.map((showcase, i) => (
             <div
               key={i}
               className="overflow-hidden w-[200px] lg:w-[500px] h-[100px] lg:h-[300px] mr-5"
