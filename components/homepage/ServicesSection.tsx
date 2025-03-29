@@ -8,6 +8,10 @@ import { ImageReveal } from '../utils/ImageReveal';
 const ServicesSection = () => {
   const services = [
     {
+      name: 'Automotives',
+      url: '/services/automotives',
+    },
+    {
       name: 'Sales & Distribution',
       url: '',
     },
@@ -15,10 +19,7 @@ const ServicesSection = () => {
       name: 'Government Supplies',
       url: '',
     },
-    {
-      name: 'Automotives',
-      url: '/services/automotives',
-    },
+
     {
       name: 'Property Sales',
       url: '',

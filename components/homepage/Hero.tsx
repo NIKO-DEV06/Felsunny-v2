@@ -12,6 +12,7 @@ import { useRouter } from 'next/navigation';
 import { Reveal } from '../utils/Reveal';
 import { ImageReveal } from '../utils/ImageReveal';
 import { smoothScrollToSection } from '../utils/util';
+import Link from 'next/link';
 
 const Hero = () => {
   const router = useRouter();
@@ -66,17 +67,27 @@ const Hero = () => {
             property sales.
           </p>
         </Reveal>
-        <Reveal y={150} z="z-[10]">
-          <button
-            onClick={(e) => smoothScrollToSection(e, 'services')}
-            //   href={"/about"}
-            className="border-[#e0fd60] hover:bg-[#e0fd60] px-[1.5rem] py-[.5rem] md:py-[.7rem] duration-300 cursor-pointer rounded-lg border text-white hover:text-black"
-          >
-            <p className="fontbold uppercase text-sm tracking-widest">
-              VIEW SERVICES
-            </p>
-          </button>
-        </Reveal>
+        <div className="flex gap-2 lg:gap-4">
+          <Reveal y={150} z="z-[10]">
+            <button
+              onClick={(e) => smoothScrollToSection(e, 'services')}
+              className="border-[#e0fd60] bg-black hover:bg-[#e0fd60] px-[1.5rem] py-[.5rem] md:py-[.7rem] duration-300 cursor-pointer rounded-lg border text-white hover:text-black"
+            >
+              <p className="fontbold uppercase text-sm tracking-widest">
+                SERVICES
+              </p>
+            </button>
+          </Reveal>{' '}
+          <Reveal y={150} z="z-[10]">
+            <Link href="/services/automotives" className="w-full">
+              <button className="border-[#e0fd60] bg-[#e0fd60] hover:opacity-60 px-[1.5rem] py-[.5rem] md:py-[.7rem] duration-300 cursor-pointer rounded-lg border text-black">
+                <p className="fontbold uppercase text-sm tracking-widest">
+                  VIEW VEHICLES
+                </p>
+              </button>
+            </Link>
+          </Reveal>
+        </div>
       </div>
 
       <div className="parallax-element absolute blur-[2px] left-[15%] bottom-[25%]">
