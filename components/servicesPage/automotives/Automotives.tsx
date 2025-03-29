@@ -8,7 +8,7 @@ import Testimonials from './sections/Testimonials';
 
 const Automotives = () => {
   return (
-    <section className="text-white">
+    <section className="text-white w-screen overflow-x-clip">
       <Hero />
       <About />
       <WhyElectric />

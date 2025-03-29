@@ -28,20 +28,27 @@ const WhyElectric = () => {
     },
   ];
   return (
-    <section className="pxpx mx2xl mt-28 2xl:mt-[100px]">
+    <section className="pxpx mx2xl mt-20 lg:mt-28 2xl:mt-[100px]">
       <div>
-        <h2 className="tracking-tighter text-6xl">Why Choose Electric?</h2>
-        <p className="text-lg font-light w-[50%] mt-4">
+        <h2 className="tracking-tighter text-3xl lg:text-6xl">
+          Why Choose Electric?
+        </h2>
+        <p className="text-lg font-light lg:w-[50%] mt-4">
           Electric vehicles are changing driving with less emissions and
           cutting-edge technology. See the benefits of going electric today!
         </p>
 
-        <div className="grid grid-cols-2 gap-8 mt-10">
-          {whyChooseElectric.map((info) => (
-            <div className="w-full border border-white/30 h-[300px] p-5 flex flex-col justify-between">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10">
+          {whyChooseElectric.map((info, i) => (
+            <div
+              key={i}
+              className="w-full border border-white/30 h-[275px] lg:h-[300px] p-5 flex flex-col justify-between"
+            >
               <div className="text-5xl">{info.icon}</div>
               <div className="flex flex-col gap-4">
-                <p className="text-5xl tracking-tighter">{info.title}</p>
+                <p className="text-3xl lg:text-5xl tracking-tighter">
+                  {info.title}
+                </p>
                 <p className="font-light w-[80%]">{info.description}</p>
               </div>
             </div>

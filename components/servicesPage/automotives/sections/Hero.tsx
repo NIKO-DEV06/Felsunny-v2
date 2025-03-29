@@ -22,17 +22,17 @@ const Hero = () => {
         <div className="absolute top-0 w-full h-[300px] bg-gradient-to-b from-black via-black/50 to-transparent"></div>
         <div className="absolute bottom-0 w-full h-[500px] bg-gradient-to-t from-black via-black/50 to-transparent"></div>
       </div>
-      <div className="pxpx mx2xl absolute bottom-20 flex items-end justify-between w-full 2xl:left-1/2 2xl:-translate-x-1/2">
+      <div className="pxpx mx2xl absolute bottom-28 lg:bottom-20 flex flex-col lg:flex-row lg:items-end justify-between w-full 2xl:left-1/2 2xl:-translate-x-1/2 gap-8">
         <div>
-          <h1 className="text-7xl tracking-tighter">
+          <h1 className="text-4xl lg:text-7xl tracking-tighter">
             Your Destination for <br /> Electric Vehicles
           </h1>
-          <p className="text-2xl font-light mt-4">
+          <p className="text-lg lg:text-2xl font-light mt-2 lg:mt-4">
             Go electric, drive smarter!
           </p>
         </div>
         <div>
-          <div className="overflow-hidden w-[500px] h-[250px] rounded-3xl opacity-90 cursor-pointer group">
+          <div className="overflow-hidden lg:w-[500px] h-[250px] rounded-3xl opacity-90 cursor-pointer group">
             <Image
               src={browse}
               width={1000}

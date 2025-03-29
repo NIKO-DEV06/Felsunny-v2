@@ -34,10 +34,10 @@ const Testimonials = () => {
     <div className="w-full pt-28 pxpx mx2xl">
       <div>
         {' '}
-        <h2 className="text-5xl tracking-tighter mb-4">
+        <h2 className="text-3xl lg:text-5xl tracking-tighter mb-4">
           What Our Customers Say
         </h2>
-        <p className="mb-6 font-light text-lg">
+        <p className="mb-6 font-light lg:text-lg">
           Hear from some of our satisfied customers who have made the switch to
           solar with Lustrous.
         </p>
@@ -55,11 +55,11 @@ const Testimonials = () => {
             key={index}
             className="px-10 py-20 border border-white/30 text-center mt-10"
           >
-            <h3 className="text-3xl tracking-tighter uppercase">
+            <h3 className="text-xl whitespace-nowrap lg:text-3xl tracking-tighter uppercase">
               ~ {testimonial.name} ~
             </h3>
             <p className="font-light mt-4">{testimonial.role}</p>
-            <p className="text-3xl w-[80%] mx-auto mt-4">
+            <p className="lg:text-3xl lg:w-[80%] mx-auto mt-4">
               "{testimonial.feedback}"
             </p>
           </SwiperSlide>

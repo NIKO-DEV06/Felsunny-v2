@@ -42,7 +42,7 @@ const Showcase = () => {
   const showcase3 = [img22, img23, img24, img25, img26, img28];
 
   return (
-    <section className="mt-32">
+    <section className="mt-20 lg:mt-32">
       <h1 className="tracking-tighter text-7xl text-center underline">
         Showcase
       </h1>
@@ -50,7 +50,10 @@ const Showcase = () => {
       <div className="mt-10">
         <Marquee autoFill>
           {showcase1.map((showcase, i) => (
-            <div key={i} className="overflow-hidden w-[500px] h-[300px] mr-5">
+            <div
+              key={i}
+              className="overflow-hidden w-[200px] lg:w-[500px] h-[100px] lg:h-[300px] mr-5"
+            >
               <Image
                 src={showcase}
                 width={700}
@@ -68,7 +71,10 @@ const Showcase = () => {
       <div className="mt-5">
         <Marquee direction="right" autoFill>
           {showcase2.map((showcase, i) => (
-            <div key={i} className="overflow-hidden w-[500px] h-[300px] mr-5">
+            <div
+              key={i}
+              className="overflow-hidden w-[200px] lg:w-[500px] h-[100px] lg:h-[300px] mr-5"
+            >
               <Image
                 src={showcase}
                 width={700}
@@ -86,7 +92,10 @@ const Showcase = () => {
       <div className="mt-5">
         <Marquee autoFill>
           {showcase3.map((showcase, i) => (
-            <div key={i} className="overflow-hidden w-[500px] h-[300px] mr-5">
+            <div
+              key={i}
+              className="overflow-hidden w-[200px] lg:w-[500px] h-[100px] lg:h-[300px] mr-5"
+            >
               <Image
                 src={showcase}
                 width={700}
