@@ -12,6 +12,11 @@ const ServicesSection = () => {
       url: '/services/automotives',
     },
     {
+      name: 'Gadets & Devices',
+      // url: '/services/gadgets-and-devices',
+      url: '',
+    },
+    {
       name: 'Sales & Distribution',
       url: '',
     },

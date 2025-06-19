@@ -38,10 +38,13 @@ const GetInTouch = () => {
                 <p className="font-integral">Nigeria</p>
               </Reveal>
               <Reveal y={50}>
-                <p className="font-[300]">Gwarinpa</p>
-              </Reveal>
-              <Reveal y={50}>
-                <p className="font-[300]"> Abuja, FCT</p>
+                <p className="font-[300]">
+                  {' '}
+                  ROOM 201V,
+                  <br /> NOVARE CENTRAL OFFICE,
+                  <br /> PLOT 502, DALABA STREET, <br />
+                  WUSE ZONE 5, <br /> FCT ABUJA
+                </p>
               </Reveal>
             </div>
             <div className="flex flex-col gap-[0.1rem]">
@@ -49,12 +52,13 @@ const GetInTouch = () => {
                 <p className="font-integral">Nigeria</p>
               </Reveal>
               <Reveal y={50}>
-                <p className="font-[300]">
-                  2 Ahmadu Bello Way, Challenge 240101
+                <p className="font-[300] uppercase">
+                  2 Ahmadu Bello Way, <br />
+                  Challenge 240101
                 </p>
               </Reveal>
               <Reveal y={50}>
-                <p className="font-[300]">Ilorin, Kwara State</p>
+                <p className="font-[300] uppercase">Ilorin, Kwara State</p>
               </Reveal>
             </div>
             <div className="flex flex-col gap-[0.1rem]">
@@ -62,10 +66,10 @@ const GetInTouch = () => {
                 <p className="font-integral">United Kingdom</p>
               </Reveal>
               <Reveal y={50}>
-                <p className="font-[300]">West Midlands</p>
+                <p className="font-[300 uppercase">West Midlands</p>
               </Reveal>
               <Reveal y={50}>
-                <p className="font-[300]">Wolverhampton</p>
+                <p className="font-[300] uppercase">Wolverhampton</p>
               </Reveal>
             </div>
           </div>

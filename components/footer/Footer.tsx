@@ -52,9 +52,10 @@ const Footer = () => {
                 </p>
               </Reveal>
               <Reveal y={80}>
-                <p className="font-extralight w-[65%] mx-auto lg:mx-0">
-                  2 Ahmadu Bello Way, Challenge 240101 Ilorin, Kwara State /
-                  Gwarinpa Abuja, FCT
+                <p className="font-extralight w[65%] mx-auto lg:mx-0">
+                  Address: ROOM 201V, NOVARE CENTRAL OFFICE,
+                  <br /> PLOT 502, DALABA STREET, <br />
+                  WUSE ZONE 5 FCT, ABUJA
                 </p>
               </Reveal>
             </div>
